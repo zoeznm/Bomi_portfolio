@@ -41,7 +41,7 @@ font-weight: <weight>; */
   font-size: 14px;
   display: flex;
   align-items: flex-end;
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
 .topbar ul > li:nth-child(3) > div {
