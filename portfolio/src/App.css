@@ -1,38 +1,49 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
+/* font-family: "Jura", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>; */
+
+:root {
+  --color1: #9fff54;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+}
+
+.introduce {
+  position: absolute;
+  width: 100vw;
+  height: 60vh;
+  top: 20%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.introduce div:nth-child(1) {
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.introduce img {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.introduce div:nth-child(2) {
+  width: 100vw;
+  bottom: 0;
+  position: absolute;
 }
-
-.App-link {
-  color: #61dafb;
+.introduce p {
+  padding: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.introduce p:nth-child(1) {
+  font-size: 1.2em;
+  font-weight: 600;
 }

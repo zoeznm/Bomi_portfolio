@@ -57,6 +57,7 @@ font-weight: <weight>; */
   height: 100px;
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
 }
 .topbar ul > li > div > a {
   font-size: 14px;
@@ -68,6 +69,264 @@ font-weight: <weight>; */
   font-size: 18px; /* 폰트 크기 조절 */
 }
 
-.topbar a:hover {
-  text-decoration: double;
+@media (max-width: 400px) {
+  .topbar {
+    overflow: hidden;
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+  }
+  
+  .topbar ul {
+    list-style-type: none;
+    padding: 10px 0; /* 위아래 여백 */
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .topbar li {
+    display: inline;
+    margin: 0 15px; /* 좌우 여백 */
+  }
+  
+  .topbar li div {
+    display: inline;
+    margin: 0 15px; /* 좌우 여백 */
+  }
+  .topbar ul > li:nth-child(1) {
+    width: 500px;
+    height: 50px;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 8px;
+  }
+  
+  .topbar ul > li:nth-child(3) > div {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .topbar ul > li:nth-child(2) > div:nth-child(1) {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  .topbar ul > li > div > a {
+    font-size: 14px;
+  }
+  
+  .topbar a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px; /* 폰트 크기 조절 */
+  }
+  
+}
+@media (min-width: 401px) and (max-width: 768px) {
+  .topbar {
+    overflow: hidden;
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+  }
+  
+  .topbar ul {
+    list-style-type: none;
+    padding: 10px 0; /* 위아래 여백 */
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .topbar li {
+    display: inline;
+    margin: 0 15px; /* 좌우 여백 */
+  }
+  
+  .topbar li div {
+    display: inline;
+    margin: 0 15px; /* 좌우 여백 */
+  }
+  .topbar ul > li:nth-child(1) {
+    width: 400px;
+    height: 45px;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 8px;
+  }
+  
+  .topbar ul > li:nth-child(3) > div {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    display: none;
+  }
+  
+  .topbar ul > li:nth-child(2) > div:nth-child(1) {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    display: none;
+  }
+  .topbar ul > li > div > a {
+    font-size: 14px;
+  }
+  
+  .topbar a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px; /* 폰트 크기 조절 */
+  }
+}
+@media (min-width: 769px) and (max-width:1350px) {
+  .topbar {
+    overflow: hidden;
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+  }
+  
+  .topbar ul {
+    list-style-type: none;
+    padding: 10px 0; /* 위아래 여백 */
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .topbar li {
+    display: inline;
+    margin: 0 15px; /* 좌우 여백 */
+  }
+  
+  .topbar li div {
+    display: inline;
+    margin: 0 15px; /* 좌우 여백 */
+  }
+  .topbar ul > li:nth-child(1) {
+    width: 400px;
+    height: 45px;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 8px;
+  }
+  
+  .topbar ul > li:nth-child(3) > div {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    display: none;
+  }
+  
+  .topbar ul > li:nth-child(2) > div:nth-child(1) {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    display: none;
+  }
+  .topbar ul > li > div > a {
+    font-size: 14px;
+  }
+  
+  .topbar a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px; /* 폰트 크기 조절 */
+  }
+  
+}
+@media screen and (min-width:1433) {
+  .topbar {
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+  }
+  
+  .topbar ul {
+    list-style-type: none;
+    padding: 10px 0; /* 위아래 여백 */
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .topbar li {
+    display: inline;
+    margin: 0 15px; /* 좌우 여백 */
+  }
+  
+  .topbar li div {
+    display: inline;
+    margin: 0 15px; /* 좌우 여백 */
+  }
+  .topbar ul > li:nth-child(1) {
+    width: 400px;
+    height: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 8px;
+  }
+  
+  .topbar ul > li:nth-child(3) > div {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .topbar ul > li:nth-child(2) > div:nth-child(1) {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  .topbar ul > li > div > a {
+    font-size: 14px;
+  }
+  
+  .topbar a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px; /* 폰트 크기 조절 */
+  }
 }
