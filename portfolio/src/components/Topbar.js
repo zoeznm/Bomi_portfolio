@@ -8,16 +8,8 @@ const Topbar = () => {
     <nav className="topbar">
       <ul>
         <li>
-          <div>
-            <a href="#">
-              Please don’t copy or use any of my work without permission
-            </a>
-            <a href="#">© All rights reserved.</a>
-          </div>
-        </li>
-        <li>
           <Link to="/">
-            <div className="goto"></div>
+            Bomi's Portfolio
           </Link>
         </li>
         <li>
@@ -25,6 +17,14 @@ const Topbar = () => {
             <a href="#">matomabo</a>
             <a href="#">Bomi Kim</a>
             <a href="#">zoeznm</a>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a href="#">
+              Please don’t copy or use any of my work without permission
+            </a>
+            <a href="#">© All rights reserved.</a>
           </div>
         </li>
       </ul>

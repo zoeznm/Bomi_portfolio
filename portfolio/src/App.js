@@ -1,10 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Topbar from './components/Topbar';
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import { Link } from 'react-router-dom';
+
 
 const App = () => {
   return (
@@ -23,10 +24,8 @@ const App = () => {
 const MainPage = () => {
   return (
     <div>
-      <Link to="/">메인 페이지로 돌아가기</Link>
+      <Topbar />
       <Navbar />
-      <h1>Main Page</h1>
-      <p>여기에 포트폴리오 소개 내용을 작성하세요.</p>
     </div>
   );
 };
