@@ -23,7 +23,7 @@ font-weight: <weight>; */
   padding: 10px 0; /* 위아래 여백 */
   margin: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .topbar li {
@@ -35,10 +35,13 @@ font-weight: <weight>; */
   display: inline;
   margin: 0 15px; /* 좌우 여백 */
 }
-.topbar ul > li:nth-child(1)  {
+.topbar ul > li:nth-child(1) {
   width: 400px;
-  height: 100px;
-font-size: 14px;
+  height: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 10px;
 }
 
 .topbar ul > li:nth-child(3) > div {
