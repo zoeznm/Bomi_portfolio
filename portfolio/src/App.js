@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Topbar from "./components/Topbar";
@@ -8,8 +8,24 @@ import Contact from "./pages/Contact";
 import "./App.css";
 
 const App = () => {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    setCursorPosition({ x: e.clientX, y: e.clientY });
+  };
+
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
   return (
     <div>
+      <div
+        className="circle-cursor"
+        style={{ left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px` }}
+      ></div>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/aboutme" element={<AboutMe />} />

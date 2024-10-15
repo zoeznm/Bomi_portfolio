@@ -13,8 +13,21 @@ font-weight: <weight>; */
   font-family: "Jura", sans-serif;
   font-optical-sizing: auto;
   font-weight: light;
+  cursor: none;
 }
-
+body {
+  cursor: none;
+}
+.circle-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--color1);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
 .introduce {
   position: absolute;
   width: 100vw;

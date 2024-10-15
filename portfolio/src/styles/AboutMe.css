@@ -82,3 +82,15 @@ h1 {
   right: 38%;
   transform: scaleX(-1);
 }
+.character {
+  position: absolute;
+  bottom: 15%;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+.character p {
+  color: #a8a8a8;
+}
