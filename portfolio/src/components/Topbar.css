@@ -267,7 +267,7 @@ font-weight: <weight>; */
   }
   
 }
-@media screen and (min-width:1433) {
+@media screen and (min-width:1433px) {
   .topbar {
     position: absolute;
     top: 2%;
