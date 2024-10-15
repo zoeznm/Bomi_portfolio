@@ -7,3 +7,22 @@ font-style: normal; */
 :root {
   --color1: #9fff54;
 }
+.stacks_hspos {
+  position: absolute;
+  bottom: 15%;
+  width: 100vw;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px; 
+}
+.stacks_hspos div {
+  border-radius: 100px;
+  border: 1px solid #000;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+}
+.stacks_hspos div p {
+  padding-top: 20px;
+}

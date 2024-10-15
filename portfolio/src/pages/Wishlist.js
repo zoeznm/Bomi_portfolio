@@ -18,6 +18,17 @@ const Todo = () => {
       <div className="wishlist_stacks">
         <p>use stacks</p>
       </div>
+      <div className="stacks_wishlist">
+        <div className="html">
+          <p>HTML</p>
+        </div>
+        <div className="css">
+          <p>CSS</p>
+        </div>
+        <div className="js">
+          <p>JS</p>
+        </div>
+      </div>
       <div className="wishlist_url">
         <a href="http://whatiwantwish.s3-website.ap-northeast-2.amazonaws.com/">http://whatiwantwish.s3-website.ap-northeast-2.amazonaws.com/</a>
       </div>

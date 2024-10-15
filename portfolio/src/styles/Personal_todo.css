@@ -22,7 +22,7 @@ font-style: normal; */
   width: 100vw;
 }
 .personal-title p {
-  font-weight: bolder;
+  font-weight: 700;
   font-size: 1.1rem;
 }
 .todo_stacks {
@@ -34,9 +34,40 @@ font-style: normal; */
 .todo_stacks p {
   font-size: 1.2em;
 }
+.stacks_todo {
+  position: absolute;
+  bottom: 15%;
+  width: 100vw;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px; 
+}
+.stacks_todo div {
+  border-radius: 100px;
+  border: 1px solid #000;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+}
+.stacks_todo div p {
+  padding-top: 20px;
+}
 .todo_url {
   position: absolute;
   top: 15%;
   width: 100vw;
   text-align: center;
+}
+.react:hover {
+  background-color: #00DCFF;
+}
+.nodejs:hover {
+  background-color: #8BC500;
+}
+.express:hover {
+  background-color: #F7DF1D;
+}
+.mysql:hover {
+  background-color: #F29111;
 }

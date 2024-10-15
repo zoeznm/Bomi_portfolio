@@ -18,6 +18,20 @@ const Todo = () => {
       <div className="todo_stacks">
         <p>use stacks</p>
       </div>
+      <div className="stacks_todo">
+        <div className="react">
+          <p>React</p>
+        </div>
+        <div className="nodejs">
+          <p>Node.js</p>
+        </div>
+        <div className="express">
+          <p>Express</p>
+        </div>
+        <div className="mysql">
+          <p>MySQL</p>
+        </div>
+      </div>
       <div className="todo_url">
         <a href="http://todocalendar.s3-website.ap-northeast-2.amazonaws.com/">
           http://todocalendar.s3-website.ap-northeast-2.amazonaws.com/

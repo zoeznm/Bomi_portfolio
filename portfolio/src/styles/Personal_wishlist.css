@@ -16,9 +16,37 @@ font-style: normal; */
 .wishlist_stacks p {
   font-size: 1.2em;
 }
+.stacks_wishlist {
+  position: absolute;
+  bottom: 15%;
+  width: 100vw;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px; 
+}
+.stacks_wishlist div {
+  border-radius: 100px;
+  border: 1px solid #000;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+}
+.stacks_wishlist div p {
+  padding-top: 20px;
+}
 .wishlist_url {
   position: absolute;
   top: 15%;
   width: 100vw;
   text-align: center;
+}
+.html:hover {
+  background-color: #E45125;
+}
+.css:hover {
+  background-color: #0C73B7;
+}
+.js:hover {
+  background-color: #E3A328;
 }

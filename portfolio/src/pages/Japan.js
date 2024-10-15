@@ -18,6 +18,11 @@ const Todo = () => {
       <div className="japan_stacks">
         <p>use stacks</p>
       </div>
+      <div className="stacks_japan">
+        <div className="react">
+          <p>React</p>
+          </div>
+      </div>
       <div className="japan_url">
         <a href="http://japanesenumber.s3-website.ap-northeast-2.amazonaws.com/">http://japanesenumber.s3-website.ap-northeast-2.amazonaws.com/</a>
       </div>

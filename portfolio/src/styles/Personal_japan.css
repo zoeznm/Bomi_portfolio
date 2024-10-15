@@ -16,6 +16,22 @@ font-style: normal; */
 .japan_stacks p {
   font-size: 1.2em;
 }
+.stacks_japan {
+  position: absolute;
+  bottom: 15%;
+  width: 100vw;
+}
+.stacks_japan div {
+  margin: 0 auto;
+  border-radius: 100px;
+  border: 1px solid #000;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+}
+.stacks_japan div p {
+  padding-top: 20px;
+}
 .japan_url {
   position: absolute;
   top: 15%;
