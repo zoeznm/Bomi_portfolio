@@ -71,3 +71,35 @@ font-style: normal; */
 .mysql:hover {
   background-color: #F29111;
 }
+.slider-container {
+  width: 100vw;
+  position: absolute;
+  top: 27%;
+  text-align: center;
+}
+
+.slider {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.buttons button {
+  padding: 10px 10px;
+  font-size: 1px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid #000;
+  background-color: #ffffff;
+  border-radius: 100px;
+}
