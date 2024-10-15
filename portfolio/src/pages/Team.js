@@ -9,16 +9,14 @@ const Projects = () => {
     <div>
       <Navbar />
       <Topbar />
-      <nav className='chooseone'>
-      <ul>
-        <li>
-        <Link to="/Personal">Personal Projects</Link>
-        </li>
-        <li>
-        <Link to="/Team">Team Projects</Link>
-        </li>
-      </ul>
-    </nav>
+      <div className="chooseone">
+        <p>
+          <Link to="/Personal">Personal Projects</Link>
+        </p>
+        <p>
+          <Link to="/Team">Team Projects</Link>
+        </p>
+      </div>
     </div>
   );
 };

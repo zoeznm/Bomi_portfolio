@@ -19,3 +19,43 @@ h1 {
   margin: 20px;
 }
 
+.chooseone {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+}
+
+.chooseone ul {
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.chooseone li {
+  display: inline;
+  margin: 0 250px;
+  position: relative;
+  font-size: 1.2em;
+}
+.chooseone li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--color1);
+  transform: translateX(-50%) scale(0);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.chooseone li:hover::after {
+  transform: translateX(-50%) scale(1);
+}
