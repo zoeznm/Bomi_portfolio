@@ -52,9 +52,6 @@ font-weight: <weight>; */
   font-size: 18px;
 }
 
-.menubar a:hover {
-  text-decoration: double;
-}
 /* Mobile Styles */
 @media (max-width: 400px) {
   .menubar {

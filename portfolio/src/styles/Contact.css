@@ -7,12 +7,17 @@ font-style: normal; */
 :root {
   --color1: #9fff54;
 }
+* {
+  text-decoration: none;
+  color: #000;
+}
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  text-decoration: none;
 }
 
 h1 {
@@ -32,18 +37,30 @@ h1 {
   background-color: #000;
   cursor: pointer;
 }
-.manylovethx {
+.contact_message {
   position: absolute;
-  top: 40%;
-  width: 100vw;
-  display: flex;
-  justify-content: space-around;
-}
-.manylovethx > p:nth-child(2) {
-  padding-left: 60px;
+  bottom: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  color: #000;
 }
 
-.manylovethx p::after {
+.contact_message ul {
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.contact_message li {
+  display: inline;
+  margin: 0 100px;
+  position: relative;
+}
+.contact_message li::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -57,6 +74,7 @@ h1 {
   z-index: -1;
 }
 
-.manylovethx p:hover::after {
+.contact_message li:hover::after {
   transform: translateX(-50%) scale(1);
 }
+
