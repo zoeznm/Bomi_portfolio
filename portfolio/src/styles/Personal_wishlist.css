@@ -7,3 +7,18 @@ font-style: normal; */
 :root {
   --color1: #9fff54;
 }
+.wishlist_stacks {
+  position: absolute;
+  bottom: 25%;
+  width: 100vw;
+  text-align: center;
+}
+.wishlist_stacks p {
+  font-size: 1.2em;
+}
+.wishlist_url {
+  position: absolute;
+  top: 15%;
+  width: 100vw;
+  text-align: center;
+}

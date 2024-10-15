@@ -7,3 +7,36 @@ font-style: normal; */
 :root {
   --color1: #9fff54;
 }
+.back {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  padding-left: 100px;
+  width: 10vw;
+  z-index: 1;
+}
+.personal-title {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  width: 100vw;
+}
+.personal-title p {
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+.todo_stacks {
+  position: absolute;
+  bottom: 25%;
+  width: 100vw;
+  text-align: center;
+}
+.todo_stacks p {
+  font-size: 1.2em;
+}
+.todo_url {
+  position: absolute;
+  top: 15%;
+  width: 100vw;
+  text-align: center;
+}
