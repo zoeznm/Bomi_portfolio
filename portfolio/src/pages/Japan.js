@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Topbar from "../components/Topbar";
 
-const Personalwishlist = () => {
+const Japan = () => {
   return (
     <div>
       <Navbar />
@@ -11,4 +11,4 @@ const Personalwishlist = () => {
   );
 };
 
-export default Personalwishlist;
+export default Japan;

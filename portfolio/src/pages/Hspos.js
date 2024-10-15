@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Topbar from "../components/Topbar";
 
-const Personaljapan = () => {
+const Hspos = () => {
   return (
     <div>
       <Navbar />
@@ -11,4 +11,4 @@ const Personaljapan = () => {
   );
 };
 
-export default Personaljapan;
+export default Hspos;

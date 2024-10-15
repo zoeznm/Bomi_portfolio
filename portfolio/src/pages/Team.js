@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Topbar from "../components/Topbar";
 import { Link } from "react-router-dom";
 
-const Projects = () => {
+const Team = () => {
   return (
     <div>
       <Navbar />
@@ -21,4 +21,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Team;

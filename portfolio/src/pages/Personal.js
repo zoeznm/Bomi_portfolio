@@ -12,16 +12,16 @@ const Personal = () => {
       <div className="personal_take">
         <img src={`${process.env.PUBLIC_URL}/projects.png`} alt="그릇" />
         <div className="personal personal_project1">
-        <Link to="/Personal_todo">click</Link>
+        <Link to="/todo">click</Link>
         </div>
         <div className="personal personal_project2">
-        <Link to="/Personal_japan"> </Link>
+        <Link to="/japan">click</Link>
         </div>
         <div className="personal personal_project3">
-        <Link to="/Personal_wishlist"> </Link>
+        <Link to="/wishlist">click</Link>
         </div>
         <div className="personal personal_project4">
-        <Link to="/Personal_hspos"> </Link>
+        <Link to="/hspos">click</Link>
         </div>
       </div>
     </div>

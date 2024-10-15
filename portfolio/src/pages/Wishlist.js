@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Topbar from "../components/Topbar";
 
-const Personalhspos = () => {
+const Wishlist = () => {
   return (
     <div>
       <Navbar />
@@ -11,4 +11,4 @@ const Personalhspos = () => {
   );
 };
 
-export default Personalhspos;
+export default Wishlist;

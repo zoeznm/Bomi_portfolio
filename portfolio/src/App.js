@@ -6,6 +6,9 @@ import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Personal from "./pages/Personal";
 import Todo from "./pages/Todo";
+import Wishlist from "./pages/Wishlist";
+import Japan from "./pages/Japan";
+import Hspos from "./pages/Hspos";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import "./App.css";
@@ -35,6 +38,9 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/personal" element={<Personal />} />
         <Route path="/todo" element={<Todo />} />
+        <Route path="/japan" element={<Japan />} />
+        <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/hspos" element={<Hspos />} />
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
