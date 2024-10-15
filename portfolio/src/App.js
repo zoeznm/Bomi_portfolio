@@ -5,6 +5,7 @@ import Topbar from "./components/Topbar";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Personal from "./pages/Personal";
+import Todo from "./pages/Todo";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import "./App.css";
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/aboutme" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/personal" element={<Personal />} />
+        <Route path="/todo" element={<Todo />} />
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

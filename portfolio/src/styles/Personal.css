@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
+/* font-family: "Jura", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>; */
+
+:root {
+  --color1: #9fff54;
+}
+.personal_take {
+  position: relative;
+  margin-top: 22%;
+  width: 100vw;
+  text-align: center;
+}
+.personal_take img {
+  width: 45%;
+  height: auto;
+}
+.personal_project1 {
+  position: fixed;
+  margin-top: 22%;
+  top: 5%;
+  left: 35%;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.personal_project2 {
+  position: fixed;
+  margin-top: 22%;
+  top: 2%;
+  left: 43%;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+}
+.personal_project3 {
+  position: fixed;
+  margin-top: 22%;
+  top: 6%;
+  left: 52%;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+}
+.personal_project4 {
+  position: fixed;
+  margin-top: 22%;
+  top: 5%;
+  left: 61%;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+}
+.personal:hover {
+  background-color: var(--color1);
+}
+
