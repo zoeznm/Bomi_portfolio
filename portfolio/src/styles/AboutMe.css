@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
-/* font-family: "Jura", sans-serif;
-font-optical-sizing: auto;
-font-weight: <weight>;
-font-style: normal; */
 
+/* 기본 설정 */
 :root {
   --color1: #9fff54;
 }
@@ -18,106 +15,408 @@ body {
 h1 {
   margin: 20px;
 }
-.aboutme {
+div div:nth-child(4) {
   position: absolute;
-  bottom: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 300px;
-  height: auto;
+  bottom: 35%;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-.arrow {
-  width: 40px;
+div div:nth-child(4) p:nth-child(1) {
+font-size: 15em;
 }
-.arrowimg_1 {
-  position: fixed;
-  top: 38%;
-  left: 39%;
-  width: 20px;
-  height: 20px;
-  background-color: #9fff54;
-  border-radius: 20px;
+div div:nth-child(4) p:nth-child(2) {
+  display: none;
 }
-.arrow_1 {
-  position: fixed;
-  top: 35%;
-  left: 37%;
-}
-.arrowimg_2 {
-  position: fixed;
-  top: 48%;
-  left: 39.5%;
-  width: 20px;
-  height: 20px;
-  background-color: #005eff;
-  border-radius: 20px;
-}
-.arrow_2 {
-  position: fixed;
-  top: 47%;
-  left: 37%;
-  transform: rotate(-45deg);
-}
-.arrow_3 {
-  position: absolute;
-  left: 37%;
-  top: 60%;
-  transform: rotate(-60deg);
-}
-.arrow_4 {
-  position: absolute;
-  top: 35%;
-  right: 38%;
-  transform: scaleX(-1);
-}
-.arrow_5 {
-  position: absolute;
-  top: 47%;
-  right: 37%;
-  transform: scaleX(-1);
-}
-.arrow_6 {
-  position: absolute;
-  top: 60%;
-  right: 38%;
-  transform: scaleX(-1);
-}
-.character {
+
+div div:nth-child(5) 
+{
   position: absolute;
   bottom: 15%;
   width: 100vw;
   text-align: center;
   display: flex;
   flex-direction: column;
-
 }
-.character p {
+div div:nth-child(5) p {
   color: #a8a8a8;
 }
-.q1 {
-  position: absolute;
-  width: 100vw;
-  top: 35%;
-}
-.q1 p {
-  margin-left: 290px;
-  font-size: 18px;
-}
-.q2 {
-  position: absolute;
-  width: 100vw;
-  top: 48%;
-}
-.q2 p {
-  margin-left: 340px;
-  font-size: 18px;
-}
-.q3 {
-  position: absolute;
-  width: 100vw;
-  top: 62%;
-}
-.q3 p {
-  margin-left: 290px;
-  font-size: 18px;
-}
+
+/* @media (max-width: 400px) {
+  .arrow {
+    display: none;
+  }
+  .aboutme {
+    display: none;
+  }
+  .character p {
+    display: none;
+  }
+  .question {
+    display: none;
+  }
+  div > div:nth-child(8) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div > div:nth-child(8) div {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  div > div:nth-child(8) div div {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 100px;
+  }
+  
+  div > div:nth-child(8) div p {
+    margin-right: 5px;
+    padding-top: 22px;
+    font-size: 15px;
+  }
+} */
+/* @media (min-width: 401px) and (max-width: 900px) {
+  .arrow {
+    display: none;
+  }
+  .aboutme {
+    display: none;
+  }
+  .character p {
+    display: none;
+  }
+  .question {
+    display: none;
+  }
+  .question {
+    display: none;
+  }
+  div > div:nth-child(8) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div > div:nth-child(8) div {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  div > div:nth-child(8) div div {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 100px;
+  }
+  
+  div > div:nth-child(8) div p {
+    margin-right: 5px;
+    padding-top: 22px;
+  }
+} */
+/* @media (min-width: 901px) and (max-width: 970px) {
+  .arrow {
+    display: none;
+  }
+  .aboutme {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: auto;
+  }
+  .character {
+    position: absolute;
+    bottom: 15%;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .character p {
+    color: #a8a8a8;
+  }
+ .question {
+    width: 100vw;
+    position: absolute;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+  .q1,
+  .q2,
+  .q3 {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin: 50px 0;
+    font-size: 16px;
+  }
+} */
+/* @media (min-width: 971px) and (max-width: 1000px) {
+  .arrow {
+    display: none;
+  }
+  .aboutme {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: auto;
+  }
+  .character {
+    position: absolute;
+    bottom: 15%;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .character p {
+    color: #a8a8a8;
+  }
+  .question {
+    width: 100vw;
+    position: absolute;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+} */
+/* @media (min-width: 1001px) and (max-width: 1300px) {
+  .aboutme {
+display: none;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .character {
+display: none;
+  }
+
+  .character p {
+    display: none;
+  }
+
+
+  .question {
+display: none;
+  }
+  .answer {
+    display: none;
+  }
+  div > div:nth-child(8) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div > div:nth-child(8) div {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  div > div:nth-child(8) div div {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 100px;
+  }
+  
+  div > div:nth-child(8) div p {
+    margin-right: 5px;
+    padding-top: 22px;
+    font-size: 15px;
+  }
+  
+  
+} */
+/* @media (min-width: 1301px) and (max-width: 1400px) {
+  .aboutme {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: auto;
+  }
+
+  .arrow {
+    width: 40px;
+  }
+
+
+  .character {
+    position: absolute;
+    bottom: 15%;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .character p {
+    color: #a8a8a8;
+  }
+
+
+.question {
+    width: 100vw;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
+  }
+  .q1,
+  .q2,
+  .q3 {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin: 50px 0;
+    font-size: 18px;
+  }
+
+} */
+/* @media (min-width: 1401px) and (max-width: 1800px) {
+  .aboutme {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: auto;
+  }
+
+  .arrow {
+    width: 40px;
+  }
+
+  .arrow_1 {
+    position: fixed;
+    top: 35%;
+    left: 37%;
+  }
+
+  .arrow_2 {
+    position: fixed;
+    top: 47%;
+    left: 34%;
+    transform: rotate(-45deg);
+  }
+
+  .arrow_3 {
+    position: absolute;
+    left: 37%;
+    top: 60%;
+    transform: rotate(-60deg);
+  }
+
+  .arrow_4 {
+    position: absolute;
+    top: 35%;
+    right: 38%;
+    transform: scaleX(-1);
+  }
+
+  .arrow_5 {
+    position: absolute;
+    top: 47%;
+    right: 37%;
+    transform: scaleX(-1);
+  }
+
+  .arrow_6 {
+    position: absolute;
+    top: 60%;
+    right: 38%;
+    transform: scaleX(-1);
+  }
+
+  .character {
+    position: absolute;
+    bottom: 15%;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .character p {
+    color: #a8a8a8;
+  }
+
+
+  div > div:nth-child(6) {
+    width: 100vw;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+  }
+  .q1,
+  .q2,
+  .q3 {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin: 50px 0;
+    font-size: 18px;
+  }
+  .q1 {
+    position: relative;
+    top: 35%;
+  }
+
+  .q2 {
+    position: relative;
+    top: 45%;
+  }
+
+  .q3 {
+    position: relative;
+    top: 55%;
+  }
+} */
