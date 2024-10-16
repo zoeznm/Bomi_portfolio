@@ -6,3 +6,212 @@ font-weight: <weight>; */
 :root {
   --color1: #9fff54;
 }
+.team_take {
+  position: relative;
+  margin-top: 22%;
+  width: 100vw;
+  text-align: center;
+}
+.team_take img {
+  width: 45%;
+  height: auto;
+}
+.team_project1 {
+  position: fixed;
+  margin-top: 22%;
+  top: 4%;
+  left: 30%;
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.team_project2 {
+  position: fixed;
+  margin-top: 22%;
+  top: 2%;
+  left: 38%;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+}
+.team_project3 {
+  position: fixed;
+  margin-top: 22%;
+  top: 6%;
+  left: 47%;
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+}
+.team_project4 {
+  position: fixed;
+  margin-top: 22%;
+  top: 3%;
+  left: 55%;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+}
+.team_project5 {
+  position: fixed;
+  margin-top: 22%;
+  top: 4.5%;
+  left: 63%;
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+}
+.team:hover {
+  background-color: var(--color1);
+}
+.team_take > div:nth-child(3) {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .team_take {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .team_take img ,.team_project1,.team_project2,.team_project3,.team_project4,.team_project5 {
+    display: none;
+  }
+  .team_take > div:nth-child(3) {
+    position: absolute;
+    top: 10%;
+    width: 100vw;
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+}
+@media (min-width: 401px) and (max-width: 846px) {
+  .team_take {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .team_take img ,.team_project1,.team_project2,.team_project3,.team_project4,.team_project5 {
+    display: none;
+  }
+  .team_take > div:nth-child(3) {
+    position: absolute;
+    top: 8%;
+    width: 100vw;
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+}
+@media (min-width: 847px) and (max-width: 1350px) {
+  .team_take {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .team_take img ,.team_project1,.team_project2,.team_project3,.team_project4,.team_project5 {
+    display: none;
+  }
+  .team_take > div:nth-child(3) {
+    position: absolute;
+    top: 0%;
+    width: 100vw;
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+}
+@media screen and (min-width: 1433px) {
+  .team_take {
+    position: relative;
+    margin-top: 22%;
+    width: 100vw;
+    text-align: center;
+  }
+  .team_take img {
+    width: 45%;
+    height: auto;
+  }
+  .team_project1 {
+    position: fixed;
+    top: 4%;
+    left: 30%;
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    background-color: #fff;
+    border: 1px solid #000;
+  }
+  .team_project2 {
+    position: fixed;
+    margin-top: 22%;
+    top: 2%;
+    left: 38%;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+  }
+  .team_project3 {
+    position: fixed;
+    margin-top: 22%;
+    top: 6%;
+    left: 47%;
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+  }
+  .team_project4 {
+    position: fixed;
+    margin-top: 22%;
+    top: 3%;
+    left: 55%;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+  }
+  .team_project5 {
+    position: fixed;
+    margin-top: 22%;
+    top: 4.5%;
+    left: 63%;
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+  }
+
+}
+

@@ -9,6 +9,7 @@ import Todo from "./pages/Todo";
 import Wishlist from "./pages/Wishlist";
 import Japan from "./pages/Japan";
 import Hspos from "./pages/Hspos";
+import Portfolio from "./pages/Portfolio";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import "./App.css";
@@ -41,6 +42,7 @@ const App = () => {
         <Route path="/japan" element={<Japan />} />
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/hspos" element={<Hspos />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

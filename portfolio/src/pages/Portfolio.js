@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Personal_wishlist.css";
+import "../styles/Personal_portfolio.css";
 import Navbar from "../components/Navbar";
 import Topbar from "../components/Topbar";
 import { Link } from "react-router-dom";
@@ -8,12 +8,13 @@ const Todo = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const slides = [
-    "/wishlist1.png", // 여기에 실제 이미지 경로를 넣어야 해
-    "/wishlist2.png",
-    "/wishlist3.png",
-    "/wishlist4.png",
-    "/wishlist5.png",
-    "/wishlist6.png"
+    "/portfolio1.png", // 여기에 실제 이미지 경로를 넣어야 해
+    "/portfolio2.png",
+    "/portfolio3.png",
+    "/portfolio4.png",
+    "/portfolio5.png",
+    "/portfolio6.png",
+    "/portfolio7.png",
   ];
 
   const nextSlide = () => {
@@ -25,6 +26,7 @@ const Todo = () => {
       (prevIndex) => (prevIndex - 1 + slides.length) % slides.length
     );
   };
+
   return (
     <div>
       <Navbar />
@@ -33,22 +35,17 @@ const Todo = () => {
         <Link to="/Personal">Back</Link>
       </div>
       <div className="personal-title">
-        <p>MyWishList</p>
+        <p>Bomi's Portfolio</p>
       </div>
-      <div className="wishlist_stacks">
+      <div className="japan_stacks">
         <p>use stacks</p>
       </div>
-      <div className="stacks_wishlist">
-        <div className="html">
-          <p>HTML</p>
-        </div>
-        <div className="css">
-          <p>CSS</p>
-        </div>
-        <div className="js">
-          <p>JS</p>
+      <div className="stacks_japan">
+        <div className="react">
+          <p>React</p>
         </div>
       </div>
+
       {/* 슬라이더 섹션 */}
       <div className="slider-container">
         <div className="slider">
@@ -63,9 +60,9 @@ const Todo = () => {
           <button onClick={nextSlide}>Next</button>
         </div>
       </div>
-      <div className="wishlist_url">
-        <a href="http://whatiwantwish.s3-website.ap-northeast-2.amazonaws.com/">
-        http://whatiwantwish.s3-website.ap-northeast-2.amazonaws.com/
+      <div className="japan_url">
+        <a href="http://japanesenumber.s3-website.ap-northeast-2.amazonaws.com/">
+          http://japanesenumber.s3-website.ap-northeast-2.amazonaws.com/
         </a>
       </div>
     </div>

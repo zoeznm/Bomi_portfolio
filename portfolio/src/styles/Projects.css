@@ -11,12 +11,8 @@ font-style: normal; */
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
-}
-
-h1 {
-  margin: 20px;
 }
 
 .chooseone {
@@ -58,4 +54,123 @@ h1 {
 
 .chooseone li:hover::after {
   transform: translateX(-50%) scale(1);
+}
+
+@media (max-width: 400px) {
+  .chooseone {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+  }
+  
+  .chooseone ul {
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  .chooseone li {
+    display: inline;
+    margin: 0 10px;
+    position: relative;
+    font-size: 1em;
+  }
+  .chooseone li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color1);
+    transform: translateX(-50%) scale(0);
+    transition: transform 0.5s ease;
+    z-index: -1;
+  }
+  
+  .chooseone li:hover::after {
+    transform: translateX(-50%) scale(1);
+  }
+  
+}
+@media (min-width:401px) and (max-width:846px) {
+  .chooseone {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+  }
+  
+  .chooseone ul {
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  .chooseone li {
+    display: inline;
+    margin: 0 10px;
+    position: relative;
+    font-size: 1.2em;
+  }
+}
+@media (min-width:847px) and (max-width:1350px) {
+  .chooseone {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+  }
+  
+  .chooseone ul {
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  .chooseone li {
+    display: inline;
+    margin: 0 100px;
+    position: relative;
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width:1433px) {
+  .chooseone {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+  }
+  
+  .chooseone ul {
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  .chooseone li {
+    display: inline;
+    margin: 0 250px;
+    position: relative;
+    font-size: 1.2em;
+  }
 }
