@@ -64,8 +64,8 @@ const Todo = () => {
         </div>
       </div>
       <div className="wishlist_url">
-        <a href="http://whatiwantwish.s3-website.ap-northeast-2.amazonaws.com/">
-        http://whatiwantwish.s3-website.ap-northeast-2.amazonaws.com/
+        <a href="http://whatiwantwish.s3-website.ap-northeast-2.amazonaws.com">
+        http://whatiwantwish.s3-website.ap-northeast-2.amazonaws.com
         </a>
       </div>
     </div>
