@@ -8,11 +8,9 @@ const Todo = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const slides = [
-    "/todo1.png", // 여기에 실제 이미지 경로를 넣어야 해
-    "/todo2.png",
-    "/todo3.png",
-    "/todo2.png",
-    "/todo3.png",
+    "/hspos1.png", // 여기에 실제 이미지 경로를 넣어야 해
+    "/hspos2.png",
+    "/hspos3.png",
   ];
 
   const nextSlide = () => {
