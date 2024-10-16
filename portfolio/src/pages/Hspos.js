@@ -39,8 +39,8 @@ const Todo = () => {
         <p>use stacks</p>
       </div>
       <div className="stacks_hspos">
-        <div className="react">
-          <p>React</p>
+        <div className="EJS">
+          <p>EJS</p>
         </div>
         <div className="nodejs">
           <p>Node.js</p>
