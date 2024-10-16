@@ -1,47 +1,70 @@
-import React, { useState, useEffect } from "react";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from "react";
 import "../styles/AboutMe.css";
-import Navbar from "../components/Navbar";
-import Topbar from "../components/Topbar";
+import { Link } from 'react-router-dom';
 import Hellotext from "../components/Hellotext";
 
 const AboutMe = () => {
-  const [isQuestion, setIsQuestion] = useState(true);
-  
-  // 애니메이션 트리거 상태 (초기에 true)
-  const [bounce, setBounce] = useState(true);
 
-  const handleClick = () => {
-    setIsQuestion(!isQuestion);
-  };
-
-  // 페이지 로드 후 일정 시간 후에 바운스 애니메이션을 중지
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setBounce(false);  // 일정 시간이 지나면 바운스 애니메이션 비활성화
-    }, 2000);  // 2초 동안 바운스 효과 지속
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div>
-      <Navbar />
-      <Topbar />
+      <nav className="aboutme_topbar">
+      <ul>
+        <li>
+          <Link to="/">
+            Bomi's Portfolio
+          </Link>
+        </li>
+        <li>
+          <div>
+            <a href="#">matomabo</a>
+            <a href="#">Bomi Kim</a>
+            <a href="#">zoeznm</a>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a href="#">
+              Please don’t copy or use any of my work without permission
+            </a>
+            <a href="#">© All rights reserved.</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
       <Hellotext />
-
-      <div className="method">
-        {/* 바운스 애니메이션 클래스 추가 */}
-        <p 
-          onClick={handleClick} 
-          className={`animated-text ${bounce ? "bounce" : ""}`}
-        >
-          {isQuestion ? "?" : "!"}
-        </p>
-      </div>
-
-      <div className="information">
-        <p>Click the ?</p>
-      </div>
+      <nav className='aboutme_menu'>
+      <ul>
+        <li>
+          <Link to="/aboutme">About Me</Link>
+        </li>
+        <li>
+          <Link to="/projects">Projects</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
+    </nav>
+      <nav className="aboutme_menubar">
+        <ul>
+          <li>
+            <p>Who i am?</p>
+          </li>
+          <li>
+            <p>Why Frontend Engineer?</p>
+          </li>
+          <li>
+            <p>What Stacks?</p>
+          </li>
+          <li>
+            <p>What Goals?</p>
+          </li>
+        </ul>
+      </nav>
     </div>
+    
   );
 };
 

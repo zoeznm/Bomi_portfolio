@@ -11,7 +11,11 @@ body {
   min-height: 100vh;
   margin: 0;
 }
-
+.shadow {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
 .method {
   position: absolute;
   bottom: 35%;
@@ -69,6 +73,52 @@ font-size: 15em;
     transform: translateY(-10px);
   }
 }
+
+.aboutme_menubar {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+}
+
+.aboutme_menubar ul {
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.aboutme_menubar li {
+  display: inline-flex;
+  margin: 0 15px;
+  position: relative;
+}
+.aboutme_menubar li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--color1);
+  transform: translateX(-50%) scale(0);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.aboutme_menubar li:hover::after {
+  transform: translateX(-50%) scale(1);
+}
+.aboutme_menubar a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
 
 /* @media (max-width: 400px) {
   .arrow {
@@ -447,3 +497,474 @@ display: none;
     top: 55%;
   }
 } */
+.aboutme_topbar {
+  position: absolute;
+  top: 2%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+}
+
+.aboutme_topbar ul {
+  list-style-type: none;
+  padding: 10px 0; /* 위아래 여백 */
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutme_topbar li {
+  display: inline;
+  margin: 0 15px; /* 좌우 여백 */
+}
+
+.aboutme_topbar li div {
+  display: inline;
+  margin: 0 15px; /* 좌우 여백 */
+}
+.aboutme_topbar ul > li:nth-child(1) {
+  width: 400px;
+  height: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 8px;
+}
+
+.aboutme_topbar ul > li:nth-child(3) > div {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.aboutme_topbar ul > li:nth-child(2) > div:nth-child(1) {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.aboutme_topbar ul > li > div > a {
+  font-size: 14px;
+}
+
+.aboutme_topbar a {
+  color: #dbdbdb;
+  text-decoration: none;
+  font-size: 18px; /* 폰트 크기 조절 */
+}
+
+@media (max-width: 400px) {
+  .aboutme_topbar {
+    overflow: hidden;
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+  }
+  
+  .aboutme_topbar ul {
+    list-style-type: none;
+    padding: 10px 0; /* 위아래 여백 */
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .aboutme_topbar li {
+    display: inline;
+    margin: 0 15px; /* 좌우 여백 */
+  }
+  
+  .aboutme_topbar li div {
+    display: inline;
+    margin: 0 15px; /* 좌우 여백 */
+  }
+  .aboutme_topbar ul > li:nth-child(1) {
+    width: 500px;
+    height: 50px;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 8px;
+  }
+  
+  .aboutme_topbar ul > li:nth-child(3) > div {
+    width: 400px;
+    height: 100px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .aboutme_topbar ul > li:nth-child(2) > div:nth-child(1) {
+    width: 400px;
+    height: 100px;
+    display: none;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  .aboutme_topbar ul > li > div > a {
+    font-size: 14px;
+  }
+  
+  .aboutme_topbar a {
+    color: #dbdbdb;
+    text-decoration: none;
+    font-size: 18px; /* 폰트 크기 조절 */
+  }
+  
+}
+@media (min-width: 401px) and (max-width: 768px) {
+  .aboutme_topbar {
+    overflow: hidden;
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+  }
+  
+  .aboutme_topbar ul {
+    list-style-type: none;
+    padding: 10px 0; /* 위아래 여백 */
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .aboutme_topbar li {
+    display: inline;
+    margin: 0 15px; /* 좌우 여백 */
+  }
+  
+  .aboutme_topbar li div {
+    display: inline;
+    margin: 0 15px; /* 좌우 여백 */
+  }
+  .aboutme_topbar ul > li:nth-child(1) {
+    width: 400px;
+    height: 45px;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 8px;
+  }
+  
+  .aboutme_topbar ul > li:nth-child(3) > div {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    display: none;
+  }
+  
+  .aboutme_topbar ul > li:nth-child(2) > div:nth-child(1) {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    display: none;
+  }
+  .aboutme_topbar ul > li > div > a {
+    font-size: 14px;
+  }
+  
+  .aboutme_topbar a {
+    color: #dbdbdb;
+    text-decoration: none;
+    font-size: 18px; /* 폰트 크기 조절 */
+  }
+}
+@media (min-width: 769px) and (max-width:1350px) {
+  .aboutme_topbar {
+    overflow: hidden;
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+  }
+  
+  .aboutme_topbar ul {
+    list-style-type: none;
+    padding: 10px 0; /* 위아래 여백 */
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .aboutme_topbar li {
+    display: inline;
+    margin: 0 15px; /* 좌우 여백 */
+  }
+  
+  .aboutme_topbar li div {
+    display: inline;
+    margin: 0 15px; /* 좌우 여백 */
+  }
+  .aboutme_topbar ul > li:nth-child(1) {
+    width: 400px;
+    height: 45px;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 8px;
+  }
+  
+  .aboutme_topbar ul > li:nth-child(3) > div {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    display: none;
+  }
+  
+  .aboutme_topbar ul > li:nth-child(2) > div:nth-child(1) {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    display: none;
+  }
+  .aboutme_topbar ul > li > div > a {
+    font-size: 14px;
+  }
+  
+  .aboutme_topbar a {
+    color: #dbdbdb;
+    text-decoration: none;
+    font-size: 18px; /* 폰트 크기 조절 */
+  }
+  
+}
+@media screen and (min-width:1433px) {
+  .aboutme_topbar {
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+  }
+  
+  .aboutme_topbar ul {
+    list-style-type: none;
+    padding: 10px 0; /* 위아래 여백 */
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .aboutme_topbar li {
+    display: inline;
+    margin: 0 15px; /* 좌우 여백 */
+  }
+  
+  .aboutme_topbar li div {
+    display: inline;
+    margin: 0 15px; /* 좌우 여백 */
+  }
+  .aboutme_topbar ul > li:nth-child(1) {
+    width: 400px;
+    height: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 8px;
+  }
+  
+  .aboutme_topbar ul > li:nth-child(3) > div {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .aboutme_topbar ul > li:nth-child(2) > div:nth-child(1) {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  .aboutme_topbar ul > li > div > a {
+    font-size: 14px;
+  }
+  
+  .aboutme_topbar a {
+    color: #dbdbdb;
+    text-decoration: none;
+    font-size: 18px; /* 폰트 크기 조절 */
+  }
+}
+/* ! menu ! */
+.aboutme_menu {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+}
+
+.aboutme_menu ul {
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.aboutme_menu li {
+  display: inline;
+  margin: 0 15px;
+  position: relative;
+}
+.aboutme_menu li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--color1);
+  transform: translateX(-50%) scale(0);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.aboutme_menu li:hover::after {
+  transform: translateX(-50%) scale(1);
+}
+.aboutme_menu a {
+  color: #dbdbdb;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Mobile Styles */
+@media (max-width: 400px) {
+  .aboutme_menu {
+    overflow: hidden;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+  }
+
+  .aboutme_menu ul {
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  .aboutme_menu li {
+    display: inline;
+    margin: 0 15px;
+    position: relative;
+  }
+  .aboutme_menu li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color1);
+    transform: translateX(-50%) scale(0);
+    transition: transform 0.5s ease;
+    z-index: -1;
+  }
+
+  .aboutme_menu li:hover::after {
+    transform: translateX(-50%) scale(1);
+  }
+  .aboutme_menu a {
+    color: #dbdbdb;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .aboutme_menu a:hover {
+    text-decoration: double;
+  }
+}
+@media (min-width: 401px) and (max-width: 768px) {
+  .aboutme_menu {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+  }
+  
+  .aboutme_menu ul {
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  .aboutme_menu li {
+    display: inline;
+    margin: 0 15px;
+    position: relative;
+  }
+  .aboutme_menu li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color1);
+    transform: translateX(-50%) scale(0);
+    transition: transform 0.5s ease;
+    z-index: -1;
+  }
+  
+  .aboutme_menu li:hover::after {
+    transform: translateX(-50%) scale(1);
+  }
+  .aboutme_menu a {
+    color: #dbdbdb;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .aboutme_menu a:hover {
+    text-decoration: double;
+  }
+}
