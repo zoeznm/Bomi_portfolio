@@ -25,14 +25,13 @@ body {
   flex-direction: column;
 }
 .method p:nth-child(1) {
-font-size: 15em;
+  font-size: 15em;
 }
 .method p:nth-child(2) {
   display: none;
 }
 
-.information 
-{
+.information {
   position: absolute;
   bottom: 15%;
   width: 100vw;
@@ -40,7 +39,7 @@ font-size: 15em;
   display: flex;
   flex-direction: column;
 }
-.information  p {
+.information p {
   color: #a8a8a8;
 }
 .animated-text {
@@ -63,7 +62,11 @@ font-size: 15em;
 
 /* 바운스 애니메이션 정의 */
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {
@@ -118,7 +121,79 @@ font-size: 15em;
   text-decoration: none;
   font-size: 18px;
 }
+.aboutme_introduce {
+  position: absolute;
+  top: 40%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+}
+
+.whoiam p {
+  text-align: center;
+  margin: 15px 0;
+}
+.whoiam > p:nth-child(1) {
+  font-size: 1.2em;
+}
+.whoiam > p:nth-child(2) {
+  font-size: 1.2em;
+}
+.whoiam > p:nth-child(3) {
+  color: #a8a8a8;
+}
+.whoiam > p:nth-child(4) {
+  color: #a8a8a8;
+}
+.whyfront {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.whyfront > div:nth-child(1) p {
+  margin: 15px 0;
+}
+.whyfront > div:nth-child(2) p {
+  margin: 15px 0;
+}
+
+.whatstacks {
+  position: absolute;
+  width: 100vw;
+  display: inline-flex;
+  flex-direction:row;
+  justify-content: center; 
+  align-items: center; 
+}
+.whatstacks div {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 1px solid #000;
+  background-color: #fff;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.whatstacks div p {
+  margin: 15px 0;
+}
+.whatstacks div:nth-child(1) p:nth-child(1) {
+  font-weight: bolder;
+}
+.whatstacks div:nth-child(2) p:nth-child(1) {
+  font-weight: bolder;
+}
+
+.whatgoals {
+  display: block;
+  text-align: center;
+}
+.whatgoals p {
+  font-size: 3em;
+}
 
 /* @media (max-width: 400px) {
   .arrow {
@@ -497,6 +572,7 @@ display: none;
     top: 55%;
   }
 } */
+/* ! topbar ! */
 .aboutme_topbar {
   position: absolute;
   top: 2%;
@@ -571,7 +647,7 @@ display: none;
     font-optical-sizing: auto;
     font-weight: light;
   }
-  
+
   .aboutme_topbar ul {
     list-style-type: none;
     padding: 10px 0; /* 위아래 여백 */
@@ -579,12 +655,12 @@ display: none;
     display: flex;
     justify-content: space-between;
   }
-  
+
   .aboutme_topbar li {
     display: inline;
     margin: 0 15px; /* 좌우 여백 */
   }
-  
+
   .aboutme_topbar li div {
     display: inline;
     margin: 0 15px; /* 좌우 여백 */
@@ -597,7 +673,7 @@ display: none;
     align-items: flex-end;
     padding-left: 8px;
   }
-  
+
   .aboutme_topbar ul > li:nth-child(3) > div {
     width: 400px;
     height: 100px;
@@ -605,7 +681,7 @@ display: none;
     flex-direction: column;
     align-items: flex-end;
   }
-  
+
   .aboutme_topbar ul > li:nth-child(2) > div:nth-child(1) {
     width: 400px;
     height: 100px;
@@ -616,13 +692,12 @@ display: none;
   .aboutme_topbar ul > li > div > a {
     font-size: 14px;
   }
-  
+
   .aboutme_topbar a {
     color: #dbdbdb;
     text-decoration: none;
     font-size: 18px; /* 폰트 크기 조절 */
   }
-  
 }
 @media (min-width: 401px) and (max-width: 768px) {
   .aboutme_topbar {
@@ -636,7 +711,7 @@ display: none;
     font-optical-sizing: auto;
     font-weight: light;
   }
-  
+
   .aboutme_topbar ul {
     list-style-type: none;
     padding: 10px 0; /* 위아래 여백 */
@@ -644,12 +719,12 @@ display: none;
     display: flex;
     justify-content: space-between;
   }
-  
+
   .aboutme_topbar li {
     display: inline;
     margin: 0 15px; /* 좌우 여백 */
   }
-  
+
   .aboutme_topbar li div {
     display: inline;
     margin: 0 15px; /* 좌우 여백 */
@@ -662,7 +737,7 @@ display: none;
     align-items: flex-end;
     padding-left: 8px;
   }
-  
+
   .aboutme_topbar ul > li:nth-child(3) > div {
     width: 400px;
     height: 100px;
@@ -671,7 +746,7 @@ display: none;
     align-items: flex-end;
     display: none;
   }
-  
+
   .aboutme_topbar ul > li:nth-child(2) > div:nth-child(1) {
     width: 400px;
     height: 100px;
@@ -683,14 +758,14 @@ display: none;
   .aboutme_topbar ul > li > div > a {
     font-size: 14px;
   }
-  
+
   .aboutme_topbar a {
     color: #dbdbdb;
     text-decoration: none;
     font-size: 18px; /* 폰트 크기 조절 */
   }
 }
-@media (min-width: 769px) and (max-width:1350px) {
+@media (min-width: 769px) and (max-width: 1350px) {
   .aboutme_topbar {
     overflow: hidden;
     position: absolute;
@@ -702,7 +777,7 @@ display: none;
     font-optical-sizing: auto;
     font-weight: light;
   }
-  
+
   .aboutme_topbar ul {
     list-style-type: none;
     padding: 10px 0; /* 위아래 여백 */
@@ -710,12 +785,12 @@ display: none;
     display: flex;
     justify-content: space-between;
   }
-  
+
   .aboutme_topbar li {
     display: inline;
     margin: 0 15px; /* 좌우 여백 */
   }
-  
+
   .aboutme_topbar li div {
     display: inline;
     margin: 0 15px; /* 좌우 여백 */
@@ -728,7 +803,7 @@ display: none;
     align-items: flex-end;
     padding-left: 8px;
   }
-  
+
   .aboutme_topbar ul > li:nth-child(3) > div {
     width: 400px;
     height: 100px;
@@ -737,7 +812,7 @@ display: none;
     align-items: flex-end;
     display: none;
   }
-  
+
   .aboutme_topbar ul > li:nth-child(2) > div:nth-child(1) {
     width: 400px;
     height: 100px;
@@ -749,15 +824,14 @@ display: none;
   .aboutme_topbar ul > li > div > a {
     font-size: 14px;
   }
-  
+
   .aboutme_topbar a {
     color: #dbdbdb;
     text-decoration: none;
     font-size: 18px; /* 폰트 크기 조절 */
   }
-  
 }
-@media screen and (min-width:1433px) {
+@media screen and (min-width: 1433px) {
   .aboutme_topbar {
     position: absolute;
     top: 2%;
@@ -768,7 +842,7 @@ display: none;
     font-optical-sizing: auto;
     font-weight: light;
   }
-  
+
   .aboutme_topbar ul {
     list-style-type: none;
     padding: 10px 0; /* 위아래 여백 */
@@ -776,12 +850,12 @@ display: none;
     display: flex;
     justify-content: space-between;
   }
-  
+
   .aboutme_topbar li {
     display: inline;
     margin: 0 15px; /* 좌우 여백 */
   }
-  
+
   .aboutme_topbar li div {
     display: inline;
     margin: 0 15px; /* 좌우 여백 */
@@ -794,7 +868,7 @@ display: none;
     align-items: flex-end;
     padding-left: 8px;
   }
-  
+
   .aboutme_topbar ul > li:nth-child(3) > div {
     width: 400px;
     height: 100px;
@@ -802,7 +876,7 @@ display: none;
     flex-direction: column;
     align-items: flex-end;
   }
-  
+
   .aboutme_topbar ul > li:nth-child(2) > div:nth-child(1) {
     width: 400px;
     height: 100px;
@@ -813,7 +887,7 @@ display: none;
   .aboutme_topbar ul > li > div > a {
     font-size: 14px;
   }
-  
+
   .aboutme_topbar a {
     color: #dbdbdb;
     text-decoration: none;
@@ -929,13 +1003,13 @@ display: none;
     font-optical-sizing: auto;
     font-weight: light;
   }
-  
+
   .aboutme_menu ul {
     list-style-type: none;
     padding: 10px 0;
     margin: 0;
   }
-  
+
   .aboutme_menu li {
     display: inline;
     margin: 0 15px;
@@ -954,7 +1028,7 @@ display: none;
     transition: transform 0.5s ease;
     z-index: -1;
   }
-  
+
   .aboutme_menu li:hover::after {
     transform: translateX(-50%) scale(1);
   }
@@ -963,7 +1037,7 @@ display: none;
     text-decoration: none;
     font-size: 18px;
   }
-  
+
   .aboutme_menu a:hover {
     text-decoration: double;
   }
