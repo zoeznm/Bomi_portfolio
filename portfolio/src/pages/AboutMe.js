@@ -10,7 +10,7 @@ const AboutMe = () => {
       <Navbar />
       <Topbar />
       <Hellotext />
-      {/* <div>
+       <div>
         <img
           className="aboutme"
           src={`${process.env.PUBLIC_URL}/aboutme.png`}
@@ -47,19 +47,20 @@ const AboutMe = () => {
           alt="화살표"
         />
       </div>
-       */}
+       
       <div className="character">
-        <p>open the cabinet</p>
+        <p>Click the Character</p>
+        <p>Left: Q , Right: A</p>
       </div>
-      {/* <div className="qna_1">
+      <div className="q1">
         <p>프론트엔드 개발을 선택한 이유는 무엇인가요?</p>
       </div>
-      <div className="qna_2">
+      <div className="q2">
         <p>어떤 기술 스택을 사용하고 계신가요?</p>
       </div>
-      <div className="qna_2">
+      <div className="q3">
         <p>프론트엔드 개발자로서의 목표는 무엇인가요?</p>
-      </div> */}
+      </div> 
     </div>
   );
 };

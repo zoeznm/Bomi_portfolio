@@ -94,3 +94,30 @@ h1 {
 .character p {
   color: #a8a8a8;
 }
+.q1 {
+  position: absolute;
+  width: 100vw;
+  top: 35%;
+}
+.q1 p {
+  margin-left: 290px;
+  font-size: 18px;
+}
+.q2 {
+  position: absolute;
+  width: 100vw;
+  top: 48%;
+}
+.q2 p {
+  margin-left: 340px;
+  font-size: 18px;
+}
+.q3 {
+  position: absolute;
+  width: 100vw;
+  top: 62%;
+}
+.q3 p {
+  margin-left: 290px;
+  font-size: 18px;
+}
