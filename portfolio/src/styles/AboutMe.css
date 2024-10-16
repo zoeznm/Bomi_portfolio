@@ -12,10 +12,7 @@ body {
   margin: 0;
 }
 
-h1 {
-  margin: 20px;
-}
-div div:nth-child(4) {
+.method {
   position: absolute;
   bottom: 35%;
   width: 100vw;
@@ -23,14 +20,14 @@ div div:nth-child(4) {
   display: flex;
   flex-direction: column;
 }
-div div:nth-child(4) p:nth-child(1) {
+.method p:nth-child(1) {
 font-size: 15em;
 }
-div div:nth-child(4) p:nth-child(2) {
+.method p:nth-child(2) {
   display: none;
 }
 
-div div:nth-child(5) 
+.information 
 {
   position: absolute;
   bottom: 15%;
@@ -39,8 +36,38 @@ div div:nth-child(5)
   display: flex;
   flex-direction: column;
 }
-div div:nth-child(5) p {
+.information  p {
   color: #a8a8a8;
+}
+.animated-text {
+  font-size: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.animated-text:hover {
+  transform: scale(1.2);
+}
+
+.animated-text:active {
+  opacity: 0.5;
+}
+
+.bounce {
+  animation: bounce 2s ease infinite;
+}
+
+/* 바운스 애니메이션 정의 */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
 }
 
 /* @media (max-width: 400px) {
