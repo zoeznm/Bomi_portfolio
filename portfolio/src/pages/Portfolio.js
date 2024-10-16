@@ -8,7 +8,7 @@ const Todo = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const slides = [
-    "/portfolio1.png", // 여기에 실제 이미지 경로를 넣어야 해
+    "/portfolio1.png",
     "/portfolio2.png",
     "/portfolio3.png",
     "/portfolio4.png",

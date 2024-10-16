@@ -58,7 +58,7 @@ const AboutMe = () => {
             <p>Who I am?</p>
           </li>
           <li onClick={() => handleSectionClick('whyfront')}>
-            <p>Why Frontend Engineer?</p>
+            <p>Why Front-end Engineer?</p>
           </li>
           <li onClick={() => handleSectionClick('whatstacks')}>
             <p>What Stacks?</p>
@@ -122,7 +122,7 @@ const AboutMe = () => {
         {currentSection === 'whatgoals' && (
           <div className="whatgoals">
             <p>Happy</p>
-            <p>Frontend Engineer!</p>
+            <p>Front-end Engineer!</p>
           </div>
         )}
       </div>
