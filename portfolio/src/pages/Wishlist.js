@@ -39,13 +39,13 @@ const Todo = () => {
         <p>use stacks</p>
       </div>
       <div className="stacks_wishlist">
-        <div className="html">
+        <div>
           <p>HTML</p>
         </div>
-        <div className="css">
+        <div>
           <p>CSS</p>
         </div>
-        <div className="js">
+        <div>
           <p>JS</p>
         </div>
       </div>

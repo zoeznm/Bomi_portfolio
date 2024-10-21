@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 
 const Vending = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+
   const slides = [
     "/todo3.png", // 여기에 실제 이미지 경로를 넣어야 해
     "/todo2.png",
-    "/todo1.png"
+    "/todo1.png",
   ];
 
   const nextSlide = () => {
@@ -18,7 +18,9 @@ const Vending = () => {
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + slides.length) % slides.length
+    );
   };
 
   return (
@@ -35,20 +37,20 @@ const Vending = () => {
         <p>use stacks</p>
       </div>
       <div className="stacks_todo">
-        <div className="react">
-          <p>React</p>
+        <div>
+          <p>HTML</p>
         </div>
-        <div className="nodejs">
-          <p>Node.js</p>
+        <div>
+          <p>CSS</p>
         </div>
-        <div className="express">
-          <p>Express</p>
+        <div>
+          <p>JS</p>
         </div>
-        <div className="mysql">
-          <p>MySQL</p>
+        <div>
+          <p>Sqlite3</p>
         </div>
       </div>
-      
+
       {/* 슬라이더 섹션 */}
       <div className="slider-container">
         <div className="slider">
@@ -63,7 +65,7 @@ const Vending = () => {
           <button onClick={nextSlide}>Next</button>
         </div>
       </div>
-      
+
       <div className="todo_url">
         <a href="http://todocalendar.s3-website.ap-northeast-2.amazonaws.com/">
           http://todocalendar.s3-website.ap-northeast-2.amazonaws.com/

@@ -37,7 +37,7 @@ const Todo = () => {
         <p>use stacks</p>
       </div>
       <div className="stacks_japan">
-        <div className="react">
+        <div>
           <p>React</p>
         </div>
       </div>

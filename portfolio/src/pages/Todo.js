@@ -35,16 +35,16 @@ const Todo = () => {
         <p>use stacks</p>
       </div>
       <div className="stacks_todo">
-        <div className="react">
+        <div>
           <p>React</p>
         </div>
-        <div className="nodejs">
+        <div>
           <p>Node.js</p>
         </div>
-        <div className="express">
+        <div>
           <p>Express</p>
         </div>
-        <div className="mysql">
+        <div>
           <p>MySQL</p>
         </div>
       </div>

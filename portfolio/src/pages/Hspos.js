@@ -28,7 +28,7 @@ const Todo = () => {
       <Navbar />
       <Topbar />
       <div className="back">
-      <Link to="/Personal">Back</Link> 
+        <Link to="/Personal">Back</Link>
       </div>
       <div className="personal-title">
         <p>HS Pos</p>
@@ -37,21 +37,21 @@ const Todo = () => {
         <p>use stacks</p>
       </div>
       <div className="stacks_hspos">
-        <div className="EJS">
+        <div>
           <p>EJS</p>
         </div>
-        <div className="nodejs">
+        <div>
           <p>Node.js</p>
         </div>
-        <div className="express">
+        <div>
           <p>Express</p>
         </div>
-        <div className="mysql">
+        <div>
           <p>MySQL</p>
         </div>
       </div>
-            {/* 슬라이더 섹션 */}
-            <div className="slider-container">
+      {/* 슬라이더 섹션 */}
+      <div className="slider-container">
         <div className="slider">
           <img
             src={slides[currentIndex]}
@@ -64,8 +64,7 @@ const Todo = () => {
           <button onClick={nextSlide}>Next</button>
         </div>
       </div>
-      <div className="todo_url">
-      </div>
+      <div className="todo_url"></div>
     </div>
   );
 };

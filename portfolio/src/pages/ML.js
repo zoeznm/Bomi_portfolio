@@ -36,16 +36,19 @@ const ML = () => {
       </div>
       <div className="stacks_todo">
         <div className="react">
-          <p>React</p>
+          <p>VUE</p>
         </div>
         <div className="nodejs">
-          <p>Node.js</p>
+          <p>TS</p>
         </div>
         <div className="express">
-          <p>Express</p>
+          <p>Python</p>
         </div>
         <div className="mysql">
-          <p>MySQL</p>
+          <p>Pytorch</p>
+        </div>
+        <div className="mysql">
+          <p>Flask</p>
         </div>
       </div>
       
