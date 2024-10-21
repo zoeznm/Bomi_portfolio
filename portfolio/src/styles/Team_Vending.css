@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
+/* font-family: "Jura", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal; */
+
+:root {
+  --color1: #9fff54;
+}
+.back {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  padding-left: 100px;
+  width: 10vw;
+  z-index: 1;
+}
+.personal-title {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  width: 100vw;
+}
+.personal-title p {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.todo_stacks {
+  position: absolute;
+  bottom: 25%;
+  width: 100vw;
+  text-align: center;
+}
+.todo_stacks p {
+  font-size: 1.2em;
+}
+.stacks_todo {
+  position: absolute;
+  bottom: 15%;
+  width: 100vw;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px; 
+}
+.stacks_todo div {
+  border-radius: 100px;
+  border: 1px solid #000;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+}
+.stacks_todo div p {
+  padding-top: 20px;
+}
+.todo_url {
+  position: absolute;
+  top: 15%;
+  width: 100vw;
+  text-align: center;
+}
+.react:hover {
+  background-color: #00DCFF;
+}
+.nodejs:hover {
+  background-color: #8BC500;
+}
+.express:hover {
+  background-color: #F7DF1D;
+}
+.mysql:hover {
+  background-color: #F29111;
+}
+.slider-container {
+  width: 100vw;
+  position: absolute;
+  top: 27%;
+  text-align: center;
+}
+
+.slider {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.buttons button {
+  padding: 10px 10px;
+  font-size: 1px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid #000;
+  background-color: #ffffff;
+  border-radius: 100px;
+}
+
+@media (max-width: 430px) {
+  .back {
+    position: absolute;
+    padding-left: 0px;
+    top: 7%;
+    width: 100vw;
+    display: flex;
+    z-index: 1;
+    padding-right: 100px;
+    justify-content: flex-end;
+  }
+  .slider {
+    width: 100vw;
+    height: 250px;
+    margin: 0 auto;
+    border: 1px solid #000;
+  }
+  
+}
+
+@media (min-width:431px) and (max-width:504px) {
+  .back {
+    position: absolute;
+    padding-left: 0px;
+    top: 7%;
+    width: 100vw;
+    display: flex;
+    z-index: 1;
+    padding-right: 80px;
+    justify-content: flex-end;
+  }
+  .slider {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid #000;
+  }
+  
+}
+@media (min-width:505px) and (max-width : 900px) {
+  .back {
+    position: absolute;
+    padding-left: 0px;
+    top: 7%;
+    width: 90vw;
+    display: flex;
+    z-index: 1;
+    justify-content: flex-end;
+  }
+}
+
+
+
+/* @media (max-width: 400px) {
+}
+@media (min-width:401px) and (max-width:846px) {
+
+}
+@media (min-width:847px) and (max-width:1350px) {
+
+}
+@media screen and (min-width:1433px) {
+
+} */

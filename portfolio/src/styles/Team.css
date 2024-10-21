@@ -49,28 +49,6 @@ font-weight: <weight>; */
   background-color: #ffffff;
   border: 1px solid #000;
 }
-.team_project4 {
-  position: fixed;
-  margin-top: 22%;
-  top: 3%;
-  left: 55%;
-  width: 80px;
-  height: 80px;
-  border-radius: 100px;
-  background-color: #ffffff;
-  border: 1px solid #000;
-}
-.team_project5 {
-  position: fixed;
-  margin-top: 22%;
-  top: 4.5%;
-  left: 63%;
-  width: 75px;
-  height: 75px;
-  border-radius: 100px;
-  background-color: #ffffff;
-  border: 1px solid #000;
-}
 .team:hover {
   background-color: var(--color1);
 }

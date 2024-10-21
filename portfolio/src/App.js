@@ -12,6 +12,9 @@ import Hspos from "./pages/Hspos";
 import Portfolio from "./pages/Portfolio";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
+import ERP from "./pages/ERP";
+import Vending from "./pages/Vending";
+import ML from "./pages/ML";
 import "./App.css";
 
 const App = () => {
@@ -44,6 +47,9 @@ const App = () => {
         <Route path="/hspos" element={<Hspos />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/vending" element={<Vending />} />
+        <Route path="/erp" element={<ERP />} />
+        <Route path="/ml" element={<ML />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
