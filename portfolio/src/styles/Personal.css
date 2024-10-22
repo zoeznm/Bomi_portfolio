@@ -124,7 +124,7 @@ font-weight: <weight>; */
 
   }
 }
-@media (min-width: 847px) and (max-width: 1350px) {
+@media (min-width: 847px) and (max-width: 1430px) {
   .personal_take {
     position: relative;
     width: 100vw;
