@@ -108,12 +108,11 @@ const Vending = () => {
               </span>
               <h3>What I Do</h3>
               <ul>
-                <li>1. 카드 뒤집기</li>
-                <li>2. 옛날 윈도우 창 디자인 제작</li>
-                <li>3. 슈팅게임</li>
-                <li>4. 키보드 단어 입력받기</li>
-                <li>5. hover시 사진 나오기</li>
-                <li>6. 클릭 시 사진 나오기</li>
+                <li>Javascript 이벤트 모듈 제작</li>
+                <li>컴포넌트 드래그 이벤트</li>
+                <li>컴포넌트 클릭 이벤트</li>
+                <li>프로젝트 전체 디자인 담당</li>
+                <li>동적 배경 애니메이션 구현 담당</li>
               </ul>
             </div>
           </div>

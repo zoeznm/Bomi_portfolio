@@ -8,7 +8,7 @@ const ERP = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showFirstModal, setShowFirstModal] = useState(false);
   const [showSecondModal, setShowSecondModal] = useState(false);
-  
+
   const slides = [
     "/erp1.png", // 여기에 실제 이미지 경로를 넣어야 해
     "/erp2.png",
@@ -24,7 +24,9 @@ const ERP = () => {
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + slides.length) % slides.length
+    );
   };
 
   const closeFirstModal = () => setShowFirstModal(false);
@@ -117,19 +119,18 @@ const ERP = () => {
               </span>
               <h3>What I Do</h3>
               <ul>
-                <li>1. 카드 뒤집기</li>
-                <li>2. 옛날 윈도우 창 디자인 제작</li>
-                <li>3. 슈팅게임</li>
-                <li>4. 키보드 단어 입력받기</li>
-                <li>5. hover시 사진 나오기</li>
-                <li>6. 클릭 시 사진 나오기</li>
+                <li>디자인 시안 제작 (피그마)</li>
+                <li>사용자 개인 정보 조회 및 수정</li>
+                <li>사용자 권한·월급·분야 지정</li>
+                <li>관리자의 회원가입 요청 승인 및 데이터 입력 기능 제작</li>
+                <li>Client_칸반, 팔로우, 로그인 리팩토링</li>
+                <li>Server_회원가입 리팩토링</li>
               </ul>
             </div>
           </div>
         </>
       )}
 
-      
       {/* 슬라이더 섹션 */}
       <div className="slider-container">
         <div className="slider">
@@ -144,9 +145,10 @@ const ERP = () => {
           <button onClick={nextSlide}>Next</button>
         </div>
       </div>
-      
+
       <div className="thedate">
         <p>2024.07.16 ~ 2024.08.14</p>
+        <p>2024.08.22 ~ 2024.09.30</p>
       </div>
     </div>
   );

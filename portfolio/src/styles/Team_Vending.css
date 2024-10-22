@@ -109,6 +109,12 @@ font-style: normal; */
   text-align: center;
   bottom: 30%;
 }
+.thedate2 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 20%;
+}
 .thedate p {
   color: #9a9a9a;
 }

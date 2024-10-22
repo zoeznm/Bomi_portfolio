@@ -8,12 +8,12 @@ const ML = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showFirstModal, setShowFirstModal] = useState(false);
   const [showSecondModal, setShowSecondModal] = useState(false);
-  
+
   const slides = [
     "/ml4.png", // 여기에 실제 이미지 경로를 넣어야 해
     "/ml1.png",
     "/ml2.png",
-    "/ml3.png"
+    "/ml3.png",
   ];
 
   const nextSlide = () => {
@@ -21,7 +21,9 @@ const ML = () => {
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + slides.length) % slides.length
+    );
   };
 
   const closeFirstModal = () => setShowFirstModal(false);
@@ -105,19 +107,15 @@ const ML = () => {
               </span>
               <h3>What I Do</h3>
               <ul>
-                <li>1. 카드 뒤집기</li>
-                <li>2. 옛날 윈도우 창 디자인 제작</li>
-                <li>3. 슈팅게임</li>
-                <li>4. 키보드 단어 입력받기</li>
-                <li>5. hover시 사진 나오기</li>
-                <li>6. 클릭 시 사진 나오기</li>
+                <li>위험 야생동물 제보를 위한 사진 업로드 페이지 제작</li>
+                <li>UI 설계 및 피그마 제작</li>
+                <li>프론트엔드-머신러닝 연결</li>
               </ul>
             </div>
           </div>
         </>
       )}
 
-      
       {/* 슬라이더 섹션 */}
       <div className="slider-container">
         <div className="slider">
@@ -132,7 +130,7 @@ const ML = () => {
           <button onClick={nextSlide}>Next</button>
         </div>
       </div>
-      
+
       <div className="thedate">
         <p>2024.09.25 ~ 2024.10.17</p>
       </div>
