@@ -125,7 +125,7 @@ font-style: normal; */
 
 .modal {
   background-color: #fff;
-  width: 30%;
+  width: 42%;
   margin: 0 auto;
   border: 1px solid #000;
   text-align: center;
@@ -149,9 +149,9 @@ font-style: normal; */
   margin-left: 95%;
 }
 
-.modal-content > h3{
-  margin-top: 10px;
-  margin-bottom: 30px; /* 제목과 본문 사이에 빈 공간 추가 */
+.modal-content > h3, h4{
+  margin-top: 15px;
+  margin-bottom: 25px; /* 제목과 본문 사이에 빈 공간 추가 */
 }
 
 .modal-content > p, .modal-content > ul {
