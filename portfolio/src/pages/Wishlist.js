@@ -108,7 +108,7 @@ const Todo = () => {
                 <li>3. 슈팅게임</li>
                 <li>4. 키보드 단어 입력받기</li>
                 <li>5. hover시 사진 나오기</li>
-                <li>6. click시 사진 나오기</li>
+                <li>6. 클릭 시 사진 나오기</li>
               </ul>
             </div>
           </div>
