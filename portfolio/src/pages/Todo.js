@@ -20,7 +20,9 @@ const Todo = () => {
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + slides.length) % slides.length
+    );
   };
 
   const closeFirstModal = () => setShowFirstModal(false);
@@ -54,36 +56,54 @@ const Todo = () => {
         </div>
       </div>
       <div className="modal_button">
-        <button className="modal-toggle" onClick={() => setShowFirstModal(true)}>
+        <button
+          className="modal-toggle"
+          onClick={() => setShowFirstModal(true)}
+        >
           Why I Made This
         </button>
-        <button className="modal-toggle" onClick={() => setShowSecondModal(true)}>
+        <button
+          className="modal-toggle"
+          onClick={() => setShowSecondModal(true)}
+        >
           Core Features
         </button>
       </div>
 
-      {/* 첫 번째 모달 */}
       {showFirstModal && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={closeFirstModal}>&times;</span>
-            <h2>기획이유</h2>
-            <p>여기에 기획 이유에 대한 설명을 작성하세요.</p>
-            <p>여기에 기획 이유에 대한 설명을 작성하세요.</p>
-            <p>여기에 기획 이유에 대한 설명을 작성하세요.</p>
+        <>
+          <div className="backdrop" onClick={closeFirstModal}></div>{" "}
+          {/* 배경을 클릭하면 모달이 닫히게 처리 */}
+          <div className="modal">
+            <div className="modal-content">
+              <span className="close" onClick={closeFirstModal}>
+                &times;
+              </span>
+              <h3>Why I Made This</h3>
+              <p>
+                “복잡한 기능이 많은 기존 일정 관리 도구는 저에게 오히려
+                불편했습니다. 단순히 날짜를 선택하고 메모를 작성하는 최소한의
+                기능만 필요하기에, 직관적이고 간편한 투두 캘린더를 직접
+                제작하고자 하였습니다.”
+              </p>
+            </div>
           </div>
-        </div>
+        </>
       )}
 
-      {/* 두 번째 모달 */}
       {showSecondModal && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={closeSecondModal}>&times;</span>
-            <h2>핵심 기능</h2>
-            <p>여기에 핵심 기능에 대한 설명을 작성하세요.</p>
+        <>
+          <div className="backdrop" onClick={closeSecondModal}></div>
+          <div className="modal">
+            <div className="modal-content">
+              <span className="close" onClick={closeSecondModal}>
+                &times;
+              </span>
+              <h2>핵심 기능</h2>
+              <p>여기에 핵심 기능에 대한 설명을 작성하세요.</p>
+            </div>
           </div>
-        </div>
+        </>
       )}
 
       {/* 슬라이더 섹션 */}
