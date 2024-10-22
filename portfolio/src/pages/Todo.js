@@ -99,8 +99,16 @@ const Todo = () => {
               <span className="close" onClick={closeSecondModal}>
                 &times;
               </span>
-              <h2>핵심 기능</h2>
-              <p>여기에 핵심 기능에 대한 설명을 작성하세요.</p>
+              <h3>Core Features</h3>
+              <ul>
+                <li>다크모드 지원</li>
+                <li>년/월 변경 가능</li>
+                <li>투두 메모 입력 (해당 날짜에 메모 작성)</li>
+                <li>우선순위 설정 가능</li>
+                <li>메모, 날짜, 우선순위를 데이터베이스에 저장</li>
+                <li>완료 체크 버튼 (완료한 메모 표시)</li>
+                <li>메모 삭제 기능 (완료한 메모 또는 삭제할 메모 제거)</li>
+              </ul>
             </div>
           </div>
         </>

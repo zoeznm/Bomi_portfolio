@@ -119,22 +119,60 @@ font-style: normal; */
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5); /* 반투명한 검정 배경 */
+  background-color: rgba(255, 255, 255, 0.7); /* 반투명한 검정 배경 */
   z-index: 999; /* 모달 바로 아래에 위치 */
 }
 
 .modal {
-  background-color: #ffffff;
+  background-color: #fff;
   width: 30%;
   margin: 0 auto;
   border: 1px solid #000;
   text-align: center;
-  z-index: 1000; /* backdrop보다 위에 위치 */
+  z-index: 1000;
   position: fixed;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 20px; /* 내부 여백 추가 */
 }
+
+.modal-content {
+  position: relative; /* close 버튼 위치를 위한 상대 위치 설정 */
+}
+
+.close {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 95%;
+}
+
+.modal-content > h3{
+  margin-top: 10px;
+  margin-bottom: 30px; /* 제목과 본문 사이에 빈 공간 추가 */
+}
+
+.modal-content > p, .modal-content > ul {
+  margin-bottom: 0; /* 본문의 아래 여백을 제거 */
+  line-height: 1.6; /* 줄 간격 설정 */
+  text-align: left; /* 리스트를 왼쪽 정렬 */
+}
+
+.modal-content > ul {
+  padding-left: 20px; /* 리스트의 왼쪽 여백 추가 */
+  text-align: left; /* 리스트를 왼쪽 정렬 */
+  line-height: 1.8; /* 리스트 항목 간의 간격 증가 */
+}
+
+.modal-content > ul li {
+  margin-bottom: 10px; /* 리스트 항목 간 간격 */
+  list-style-type: disc; /* 원형 리스트 아이콘 */
+  color: #555; /* 텍스트 색상 */
+  font-size: 16px; /* 리스트 항목 폰트 크기 */
+}
+
 
 
 @media (max-width: 430px) {
