@@ -10,9 +10,13 @@ const ERP = () => {
   const [showSecondModal, setShowSecondModal] = useState(false);
   
   const slides = [
-    "/todo3.png", // 여기에 실제 이미지 경로를 넣어야 해
-    "/todo2.png",
-    "/todo1.png"
+    "/erp1.png", // 여기에 실제 이미지 경로를 넣어야 해
+    "/erp2.png",
+    "/erp3.png",
+    "/erp4.png",
+    "/erp5.png",
+    "/erp6.png",
+    "/erp7.png",
   ];
 
   const nextSlide = () => {

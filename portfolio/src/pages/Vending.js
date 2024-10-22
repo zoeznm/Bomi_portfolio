@@ -10,9 +10,14 @@ const Vending = () => {
   const [showSecondModal, setShowSecondModal] = useState(false);
 
   const slides = [
-    "/todo3.png", // 여기에 실제 이미지 경로를 넣어야 해
-    "/todo2.png",
-    "/todo1.png",
+    "/vending_theme1.png", // 여기에 실제 이미지 경로를 넣어야 해
+    "/vending_theme2.png",
+    "/vending_theme3.png",
+    "/vending_theme4.png",
+    "/vending_gumae.png",
+    "/vending_thumbnail.png",
+    "/vending_admin.png",
+    "/vending_login.png",
   ];
 
   const nextSlide = () => {
