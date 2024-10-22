@@ -65,7 +65,7 @@ font-weight: <weight>; */
     display: flex;
     flex-direction: column;
   }
-  .team_take img ,.team_project1,.team_project2,.team_project3,.team_project4,.team_project5 {
+  .team_take img ,.team_project1,.team_project2,.team_project3 {
     display: none;
   }
   .team_take > div:nth-child(3) {
@@ -88,7 +88,7 @@ font-weight: <weight>; */
     display: flex;
     flex-direction: column;
   }
-  .team_take img ,.team_project1,.team_project2,.team_project3,.team_project4,.team_project5 {
+  .team_take img ,.team_project1,.team_project2,.team_project3 {
     display: none;
   }
   .team_take > div:nth-child(3) {
@@ -102,7 +102,7 @@ font-weight: <weight>; */
 
   }
 }
-@media (min-width: 847px) and (max-width: 1350px) {
+@media (min-width: 847px) and (max-width: 1430px) {
   .team_take {
     position: relative;
     width: 100vw;
@@ -111,7 +111,7 @@ font-weight: <weight>; */
     display: flex;
     flex-direction: column;
   }
-  .team_take img ,.team_project1,.team_project2,.team_project3,.team_project4,.team_project5 {
+  .team_take img ,.team_project1,.team_project2,.team_project3 {
     display: none;
   }
   .team_take > div:nth-child(3) {
@@ -139,7 +139,7 @@ font-weight: <weight>; */
   .team_project1 {
     position: fixed;
     top: 4%;
-    left: 30%;
+    left: 40%;
     width: 75px;
     height: 75px;
     border-radius: 100px;
@@ -150,7 +150,7 @@ font-weight: <weight>; */
     position: fixed;
     margin-top: 22%;
     top: 2%;
-    left: 38%;
+    left: 48%;
     width: 80px;
     height: 80px;
     border-radius: 100px;
@@ -161,35 +161,14 @@ font-weight: <weight>; */
     position: fixed;
     margin-top: 22%;
     top: 6%;
-    left: 47%;
+    left: 56%;
     width: 75px;
     height: 75px;
     border-radius: 100px;
     background-color: #ffffff;
     border: 1px solid #000;
   }
-  .team_project4 {
-    position: fixed;
-    margin-top: 22%;
-    top: 3%;
-    left: 55%;
-    width: 80px;
-    height: 80px;
-    border-radius: 100px;
-    background-color: #ffffff;
-    border: 1px solid #000;
-  }
-  .team_project5 {
-    position: fixed;
-    margin-top: 22%;
-    top: 4.5%;
-    left: 63%;
-    width: 75px;
-    height: 75px;
-    border-radius: 100px;
-    background-color: #ffffff;
-    border: 1px solid #000;
-  }
+
 
 }
 

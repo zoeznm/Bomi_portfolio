@@ -103,6 +103,15 @@ font-style: normal; */
   background-color: #ffffff;
   border-radius: 100px;
 }
+.thedate {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 30%;
+}
+.thedate p {
+  color: #9a9a9a;
+}
 
 @media (max-width: 430px) {
   .back {

@@ -6,11 +6,14 @@ import { Link } from "react-router-dom";
 
 const ML = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showFirstModal, setShowFirstModal] = useState(false);
+  const [showSecondModal, setShowSecondModal] = useState(false);
   
   const slides = [
-    "/todo3.png", // 여기에 실제 이미지 경로를 넣어야 해
-    "/todo2.png",
-    "/todo1.png"
+    "/ml4.png", // 여기에 실제 이미지 경로를 넣어야 해
+    "/ml1.png",
+    "/ml2.png",
+    "/ml3.png"
   ];
 
   const nextSlide = () => {
@@ -20,6 +23,9 @@ const ML = () => {
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
   };
+
+  const closeFirstModal = () => setShowFirstModal(false);
+  const closeSecondModal = () => setShowSecondModal(false);
 
   return (
     <div>
@@ -51,6 +57,66 @@ const ML = () => {
           <p>Flask</p>
         </div>
       </div>
+
+      <div className="modal_button">
+        <button
+          className="modal-toggle"
+          onClick={() => setShowFirstModal(true)}
+        >
+          What We Made
+        </button>
+        <button
+          className="modal-toggle"
+          onClick={() => setShowSecondModal(true)}
+        >
+          What I Do
+        </button>
+      </div>
+
+      {showFirstModal && (
+        <>
+          <div className="backdrop" onClick={closeFirstModal}></div>{" "}
+          {/* 배경을 클릭하면 모달이 닫히게 처리 */}
+          <div className="modal">
+            <div className="modal-content">
+              <span className="close" onClick={closeFirstModal}>
+                &times;
+              </span>
+              <h3>What We Made</h3>
+              <p>
+                “처음에 제작한 개인 작업물로, 원하는 디자인과 애니메이션을
+                자유롭게 구현할 수 있는 프로젝트를 만들고자 했습니다. 이에 따라
+                나만의 Wishlist 페이지를 기획하게 되었고, 이 페이지를 통해 다른
+                사용자에게 직관적이고 재미있게 내용을 전달할 수 있는 경험을
+                제공하고자 제작하게 되었습니다.”
+              </p>
+            </div>
+          </div>
+        </>
+      )}
+
+      {showSecondModal && (
+        <>
+          <div className="backdrop" onClick={closeSecondModal}></div>
+          <div className="modal">
+            <div className="modal-content">
+              <span className="close" onClick={closeSecondModal}>
+                &times;
+              </span>
+              <h3>What I Do</h3>
+              <ul>
+                <li>1. 카드 뒤집기</li>
+                <li>2. 옛날 윈도우 창 디자인 제작</li>
+                <li>3. 슈팅게임</li>
+                <li>4. 키보드 단어 입력받기</li>
+                <li>5. hover시 사진 나오기</li>
+                <li>6. 클릭 시 사진 나오기</li>
+              </ul>
+            </div>
+          </div>
+        </>
+      )}
+
       
       {/* 슬라이더 섹션 */}
       <div className="slider-container">
@@ -67,10 +133,8 @@ const ML = () => {
         </div>
       </div>
       
-      <div className="todo_url">
-        <a href="http://todocalendar.s3-website.ap-northeast-2.amazonaws.com/">
-          http://todocalendar.s3-website.ap-northeast-2.amazonaws.com/
-        </a>
+      <div className="thedate">
+        <p>2024.09.25 ~ 2024.10.17</p>
       </div>
     </div>
   );
