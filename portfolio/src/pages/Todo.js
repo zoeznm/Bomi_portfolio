@@ -134,6 +134,9 @@ const Todo = () => {
           http://todocalendar.s3-website.ap-northeast-2.amazonaws.com/
         </a>
       </div>
+      <div className="thedate">
+        <p>2024.10.11 ~ 2024.10.14</p>
+      </div>
     </div>
   );
 };

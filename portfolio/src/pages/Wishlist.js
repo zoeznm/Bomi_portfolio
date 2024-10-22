@@ -134,6 +134,9 @@ const Todo = () => {
           http://whatiwantwish.s3-website.ap-northeast-2.amazonaws.com
         </a>
       </div>
+      <div className="thedate">
+        <p>2024.06.01 ~ 2024.08.21</p>
+      </div>
     </div>
   );
 };

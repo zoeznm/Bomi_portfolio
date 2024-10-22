@@ -127,7 +127,11 @@ const Todo = () => {
         </div>
       </div>
       <div className="todo_url"></div>
+      <div className="thedate">
+        <p>2024.09.14 ~ ing</p>
+      </div>
     </div>
+    
   );
 };
 

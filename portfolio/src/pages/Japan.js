@@ -124,6 +124,9 @@ const Todo = () => {
           http://japanesenumber.s3-website.ap-northeast-2.amazonaws.com/
         </a>
       </div>
+      <div className="thedate">
+        <p>2024.10.10 ~ 2024.10.12</p>
+      </div>
     </div>
   );
 };
