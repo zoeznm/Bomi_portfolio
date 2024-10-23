@@ -30,7 +30,7 @@ const Contact = () => {
             <img src={`${process.env.PUBLIC_URL}/gmail.png`} alt="이메일" />
             madlife1292@gmail.com
           </a>
-          <a href="https://www.notion.so/08fff35c41614049b11d73a7836b58f3">
+          <a href="https://defiant-saffron-661.notion.site/Bomi-s-Portfolio-1270b479a40080b786e3f0606b8f5118?pvs=4">
             <img src={`${process.env.PUBLIC_URL}/notion.png`} alt="노션" />
             notion_address
           </a>
@@ -48,7 +48,7 @@ const Contact = () => {
             <a href="mailto:madlife1292@gmail.com">사랑과 관심</a>
           </li>
           <li>
-            <a href="https://www.notion.so/08fff35c41614049b11d73a7836b58f3">
+            <a href="https://defiant-saffron-661.notion.site/Bomi-s-Portfolio-1270b479a40080b786e3f0606b8f5118?pvs=4">
               부탁드립니다.
             </a>
           </li>
