@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Topbar from "../components/Topbar";
 import { Link } from "react-router-dom";
 
-const Todo = () => {
+const Hspos = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showFirstModal, setShowFirstModal] = useState(false);
   const [showSecondModal, setShowSecondModal] = useState(false);
@@ -135,4 +135,4 @@ const Todo = () => {
   );
 };
 
-export default Todo;
+export default Hspos;
