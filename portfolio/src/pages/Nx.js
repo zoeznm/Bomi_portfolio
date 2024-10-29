@@ -37,7 +37,7 @@ const Nx = () => {
         <Link to="/Personal">Back</Link>
       </div>
       <div className="personal-title">
-        <p>Vote-app NX</p>
+        <p>monorepo NX</p>
       </div>
       <div className="todo_stacks">
         <p>use stacks</p>
