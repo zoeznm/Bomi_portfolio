@@ -183,10 +183,10 @@ font-weight: <weight>; */
   .personal_project2 {
     position: fixed;
     margin-top: 22%;
-    top: 2%;
-    left: 38%;
-    width: 80px;
-    height: 80px;
+    top: 5%;
+    left: 37%;
+    width: 70px;
+    height: 70px;
     border-radius: 100px;
     background-color: #ffffff;
     border: 1px solid #000;
@@ -194,8 +194,8 @@ font-weight: <weight>; */
   .personal_project3 {
     position: fixed;
     margin-top: 22%;
-    top: 6%;
-    left: 47%;
+    top: 3%;
+    left: 44%;
     width: 75px;
     height: 75px;
     border-radius: 100px;
@@ -205,10 +205,10 @@ font-weight: <weight>; */
   .personal_project4 {
     position: fixed;
     margin-top: 22%;
-    top: 3%;
-    left: 55%;
-    width: 80px;
-    height: 80px;
+    top: 7%;
+    left: 51%;
+    width: 70px;
+    height: 70px;
     border-radius: 100px;
     background-color: #ffffff;
     border: 1px solid #000;
@@ -216,8 +216,8 @@ font-weight: <weight>; */
   .personal_project5 {
     position: fixed;
     margin-top: 22%;
-    top: 4.5%;
-    left: 63%;
+    top: 3%;
+    left: 57%;
     width: 75px;
     height: 75px;
     border-radius: 100px;
@@ -228,9 +228,9 @@ font-weight: <weight>; */
     position: fixed;
     margin-top: 22%;
     top: 4.5%;
-    left: 70%;
-    width: 75px;
-    height: 75px;
+    left: 64%;
+    width: 70px;
+    height: 70px;
     border-radius: 100px;
     background-color: #ffffff;
     border: 1px solid #000;
