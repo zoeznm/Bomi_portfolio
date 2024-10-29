@@ -25,6 +25,9 @@ const Personal = () => {
             <Link to="/hspos">click</Link>
           </div>
           <div className="personal personal_project5">
+            <Link to="/nx">click</Link>
+          </div>
+          <div className="personal personal_project6">
             <Link to="/portfolio">click</Link>
           </div>
         </div>

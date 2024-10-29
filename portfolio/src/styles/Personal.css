@@ -71,6 +71,17 @@ font-weight: <weight>; */
   background-color: #ffffff;
   border: 1px solid #000;
 }
+.personal_project6 {
+  position: fixed;
+  margin-top: 22%;
+  top: 4.5%;
+  left: 70%;
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+}
 .personal:hover {
   background-color: var(--color1);
 }
@@ -87,7 +98,7 @@ font-weight: <weight>; */
     display: flex;
     flex-direction: column;
   }
-  .personal_take img ,.personal_project1,.personal_project2,.personal_project3,.personal_project4,.personal_project5 {
+  .personal_take img ,.personal_project1,.personal_project2,.personal_project3,.personal_project4,.personal_project5,.personal_project6 {
     display: none;
   }
   .personal_take > div:nth-child(3) {
@@ -110,7 +121,7 @@ font-weight: <weight>; */
     display: flex;
     flex-direction: column;
   }
-  .personal_take img ,.personal_project1,.personal_project2,.personal_project3,.personal_project4,.personal_project5 {
+  .personal_take img ,.personal_project1,.personal_project2,.personal_project3,.personal_project4,.personal_project5,.personal_project6 {
     display: none;
   }
   .personal_take > div:nth-child(3) {
@@ -133,7 +144,7 @@ font-weight: <weight>; */
     display: flex;
     flex-direction: column;
   }
-  .personal_take img ,.personal_project1,.personal_project2,.personal_project3,.personal_project4,.personal_project5 {
+  .personal_take img ,.personal_project1,.personal_project2,.personal_project3,.personal_project4,.personal_project5,.personal_project6 {
     display: none;
   }
   .personal_take > div:nth-child(3) {
@@ -207,6 +218,17 @@ font-weight: <weight>; */
     margin-top: 22%;
     top: 4.5%;
     left: 63%;
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+  }
+  .personal_project6 {
+    position: fixed;
+    margin-top: 22%;
+    top: 4.5%;
+    left: 70%;
     width: 75px;
     height: 75px;
     border-radius: 100px;
