@@ -37,17 +37,16 @@ body {
 }
 .introduce div:nth-child(1) {
   position: absolute;
-  width: 100vw;
-  height: 50vh;
+  top: 20%; /* 화면의 중간 위치 */
+  left: 44%; /* 화면의 중간 위치 */
+  transform: translate(-50%, -50%); /* 중앙 정렬을 위한 변환 */
+  display: flex; /* flexbox 사용 */
+  flex-direction: column; /* 세로 방향 정렬 */
+  justify-content: center; /* 수직 중앙 정렬 */
+  align-items: center; /* 수평 중앙 정렬 */
+  text-align: center;
 }
-.introduce img {
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 200px;
-  height: auto;
-}
+
 .introduce div:nth-child(2) {
   width: 100vw;
   bottom: 0;

@@ -17,6 +17,7 @@ import ERP from "./pages/ERP";
 import Vending from "./pages/Vending";
 import ML from "./pages/ML";
 import "./App.css";
+import LottieAnimation from "./components/animations/LottieAnimation";
 
 const App = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -66,10 +67,7 @@ const MainPage = () => {
       <Navbar />
       <div className="introduce">
         <div>
-          <img
-            src={`${process.env.PUBLIC_URL}/mainpage.png`}
-            alt="김보미의 포트폴리오"
-          />
+          <LottieAnimation />
         </div>
         <div>
           <p>김보미의 포트폴리오</p>

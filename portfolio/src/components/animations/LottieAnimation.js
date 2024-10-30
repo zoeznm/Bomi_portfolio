@@ -1,19 +1,34 @@
-// LottieAnimation.js
-import React from 'react';
+import React, { useRef } from 'react';
 import Lottie from 'react-lottie';
-import animationData from './data/first.json'; // JSON 파일 경로 설정
+import animationData from './data/first.json';
 
 const LottieAnimation = () => {
+  const lottieRef = useRef(null);
+
   const defaultOptions = {
-    loop: true,
-    autoplay: true,
+    loop: false, // 클릭할 때만 애니메이션 실행
+    autoplay: false, // 자동 재생 설정 해제
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     },
   };
 
-  return <Lottie options={defaultOptions} height={400} width={400} />;
+  const handleClick = () => {
+    lottieRef.current.stop(); // 애니메이션 정지
+    lottieRef.current.play(); // 애니메이션 재생
+  };
+
+  return (
+    <div onClick={handleClick}>
+      <Lottie
+        options={defaultOptions}
+        height={900}
+        width={900}
+        ref={lottieRef}
+      />
+    </div>
+  );
 };
 
 export default LottieAnimation;
