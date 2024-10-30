@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import Lottie from 'react-lottie';
-import animationData from './data/first.json';
+import animationData from './data/final3.json';
 
 const LottieAnimation = () => {
   const lottieRef = useRef(null);
