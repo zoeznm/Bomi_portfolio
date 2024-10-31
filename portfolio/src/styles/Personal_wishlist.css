@@ -41,12 +41,20 @@ font-style: normal; */
   width: 100vw;
   text-align: center;
 }
-.html:hover {
-  background-color: #E45125;
+
+@media (max-width:430px) {
+  .wishlist_url a {
+    font-size: 10px;
+  }
 }
-.css:hover {
-  background-color: #0C73B7;
+@media (min-width:431px) and (max-width:504px) {
+  .wishlist_url a {
+    font-size: 13px;
+  }
 }
-.js:hover {
-  background-color: #E3A328;
+@media (min-width:505px) and (max-width:900px) {
+  .wishlist_url a {
+    font-size: 14px;
+  }
 }
+

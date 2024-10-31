@@ -80,3 +80,18 @@ font-style: normal; */
   right: 10px;
   font-size: 20px; /* 버튼 크기 조정 */
 }
+@media (max-width:430px) {
+  .nx_url a {
+    font-size: 10px;
+  }
+}
+@media (min-width:431px) and (max-width:504px) {
+  .nx_url a {
+    font-size: 13px;
+  }
+}
+@media (min-width:505px) and (max-width:900px) {
+  .nx_url a {
+    font-size: 14px;
+  }
+}

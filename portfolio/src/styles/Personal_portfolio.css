@@ -1,0 +1,15 @@
+@media (max-width:430px) {
+  .portfolio_url a {
+    font-size: 10px;
+  }
+}
+@media (min-width:431px) and (max-width:504px) {
+  .portfolio_url a {
+    font-size: 13px;
+  }
+}
+@media (min-width:505px) and (max-width:900px) {
+  .portfolio_url a {
+    font-size: 14px;
+  }
+}

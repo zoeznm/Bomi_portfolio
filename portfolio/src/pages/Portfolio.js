@@ -127,7 +127,7 @@ const Portfolio = () => {
           <button onClick={nextSlide}>Next</button>
         </div>
       </div>
-      <div className="japan_url">
+      <div className="portfolio_url">
         <a href="http://japanesenumber.s3-website.ap-northeast-2.amazonaws.com/">
           http://japanesenumber.s3-website.ap-northeast-2.amazonaws.com/
         </a>
