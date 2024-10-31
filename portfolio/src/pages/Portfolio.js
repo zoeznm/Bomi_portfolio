@@ -12,10 +12,8 @@ const Portfolio = () => {
   const slides = [
     "/portfolio1.png",
     "/portfolio2.png",
-    "/portfolio3.png",
     "/portfolio4.png",
     "/portfolio5.png",
-    "/portfolio6.png",
     "/portfolio7.png",
   ];
 
