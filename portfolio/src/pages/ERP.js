@@ -49,14 +49,8 @@ const ERP = () => {
         <div className="nodejs">
           <p>Next.js</p>
         </div>
-        <div className="nodejs">
-          <p>Vanilla</p>
-        </div>
         <div className="express">
-          <p>Express</p>
-        </div>
-        <div className="express">
-          <p>TS</p>
+          <p>Type</p>
         </div>
         <div className="express">
           <p>Nest.js</p>
