@@ -699,6 +699,19 @@ display: none;
     text-decoration: none;
     font-size: 18px; /* 폰트 크기 조절 */
   }
+  .whyfront {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 13px;
+  }
+  .whyfront > div:nth-child(1) p {
+    margin: 15px 0;
+  }
+  .whyfront > div:nth-child(2) p {
+    margin: 15px 0;
+  }
+  
 }
 @media (min-width: 401px) and (max-width: 768px) {
   .aboutme_topbar {
@@ -764,6 +777,18 @@ display: none;
     color: #dbdbdb;
     text-decoration: none;
     font-size: 18px; /* 폰트 크기 조절 */
+  }
+  .whyfront {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+  }
+  .whyfront > div:nth-child(1) p {
+    margin: 15px 0;
+  }
+  .whyfront > div:nth-child(2) p {
+    margin: 15px 0;
   }
 }
 @media (min-width: 769px) and (max-width: 1350px) {
