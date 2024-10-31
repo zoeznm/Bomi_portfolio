@@ -107,6 +107,7 @@ const AboutMe = () => {
               <p>Frontend</p>
               <p>React</p>
               <p>Javascript</p>
+              <p>Typescript</p>
               <p>Next.js</p>
               <p>Tailwind CSS</p>
             </div>
@@ -116,6 +117,7 @@ const AboutMe = () => {
               <p>Nest.js</p>
               <p>MySQL</p>
               <p>postgreSQL</p>
+              <p>monorepo NX</p>
             </div>
           </div>
         )}
