@@ -128,8 +128,8 @@ const Portfolio = () => {
         </div>
       </div>
       <div className="portfolio_url">
-        <a href="http://japanesenumber.s3-website.ap-northeast-2.amazonaws.com/">
-          http://japanesenumber.s3-website.ap-northeast-2.amazonaws.com/
+        <a href="http://kimbomiportfolio.s3-website.ap-northeast-2.amazonaws.com/">
+        http://kimbomiportfolio.s3-website.ap-northeast-2.amazonaws.com/
         </a>
       </div>
       <div className="thedate">
