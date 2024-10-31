@@ -59,18 +59,7 @@ font-style: normal; */
   width: 100vw;
   text-align: center;
 }
-.react:hover {
-  background-color: #00DCFF;
-}
-.nodejs:hover {
-  background-color: #8BC500;
-}
-.express:hover {
-  background-color: #F7DF1D;
-}
-.mysql:hover {
-  background-color: #F29111;
-}
+
 .slider-container {
   width: 100vw;
   position: absolute;
